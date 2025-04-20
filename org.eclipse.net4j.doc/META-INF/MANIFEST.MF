@@ -1,0 +1,1383 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.5.2
+Build-Jdk-Spec: 17
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.net4j.doc; singleton:=true
+Bundle-Version: 4.2.6.v20230221-1613
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ClassPath: .
+Require-Bundle: org.eclipse.help;bundle-version="[3.3.0,4.0.0)";resoluti
+ on:=optional,org.eclipse.ui.intro;bundle-version="[3.4.0,4.0.0)";resolu
+ tion:=optional,org.eclipse.ui.intro.universal;bundle-version="[3.2.0,4.
+ 0.0)";resolution:=optional,org.eclipse.net4j.util.doc;bundle-version="[
+ 4.0.0,5.0.0)";resolution:=optional;visibility:=reexport,org.eclipse.net
+ 4j;bundle-version="[4.0.0,5.0.0)";resolution:=optional;visibility:=reex
+ port,org.eclipse.net4j.debug;bundle-version="[3.0.0,4.0.0)";resolution:
+ =optional;visibility:=reexport,org.eclipse.net4j.ws;bundle-version="[1.
+ 1.0,2.0.0)";resolution:=optional;visibility:=reexport,org.eclipse.net4j
+ .jvm;bundle-version="[4.0.0,5.0.0)";resolution:=optional;visibility:=re
+ export,org.eclipse.net4j.tcp;bundle-version="[4.0.0,5.0.0)";resolution:
+ =optional;visibility:=reexport,org.eclipse.net4j.ui;bundle-version="[4.
+ 0.0,5.0.0)";resolution:=optional;visibility:=reexport
+Export-Package: org.eclipse.net4j.doc;version="4.2.6",org.eclipse.net4j.
+ doc.online;version="4.2.6",org.eclipse.net4j.doc.reference;version="4.2
+ .6",org.eclipse.net4j.doc.reference.api;version="4.2.6",org.eclipse.net
+ 4j.doc.reference.schema;version="4.2.6"
+Automatic-Module-Name: org.eclipse.net4j.doc
+Eclipse-SourceReferences: scm:git:https://git.eclipse.org/r/p/cdo/cdo.gi
+ t;path="plugins/org.eclipse.net4j.doc";commitId=7eac199f9d779a8fbe0a284
+ 95847b0560a1ddaab
+
+Name: javadoc/org/eclipse/net4j/tcp/TCPUtil.AcceptorData.html
+SHA-256-Digest: MpsMl40eoMHKMwHPV4VZN3LgC3gUN0mKnXL9gkwhe9s=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/InternalChannelMultiplexer
+ .BufferMultiplexer.html
+SHA-256-Digest: twc58efjw5fkpCYntome2yyxv2mFfWmjKsEgSnXafO8=
+
+Name: javadoc/org/eclipse/net4j/signal/SignalProtocol.html
+SHA-256-Digest: 5tzgFXE85PX6bNukzFnYVxvR8cLV+ZXh06ZNHrCB23s=
+
+Name: javadoc/org/eclipse/net4j/ws/class-use/IWSNegotiationContext.html
+SHA-256-Digest: lufkZiQtO7dVFgsKcEVOGFkq15iYkpJsZ/1dUQkFY1I=
+
+Name: javadoc/org/eclipse/spi/net4j/InternalChannelMultiplexer.BufferMul
+ tiplexer.html
+SHA-256-Digest: M1ZJBhTq+IdI/S21riKMmXTBWAoa5Q0wMVbNql+ZG1Y=
+
+Name: javadoc/jquery/images/ui-icons_2e83ff_256x240.png
+SHA-256-Digest: rI9YK3KyIyWEZ3OBtFeBU4qHFOOGmc+Fi54HO4DkxE4=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/SignalProtocol.TimeoutC
+ hangedEvent.html
+SHA-256-Digest: gcU09Bry4AVeROMFAx+7tM+MVw0ahAIH5Wq8WqmygNw=
+
+Name: javadoc/org/eclipse/spi/net4j/ServerProtocolFactory.html
+SHA-256-Digest: TpYxN6yGZSy0ZJKSl8nlsGMS0huBNHm40sXI8NtAfQY=
+
+Name: images/callout-7.png
+SHA-256-Digest: 5LKy771kabe/nNIa0jRq0g+OtqXaBBv53zBKAPbLUJI=
+
+Name: javadoc/org/eclipse/net4j/class-use/TransportConfigurator.Acceptor
+ DescriptionParser.Factory.html
+SHA-256-Digest: pzj/lFSr7YEhP1Vkwa5EFCQScEDVxlMTVJKMLrjGnkQ=
+
+Name: javadoc/org/eclipse/net4j/buffer/class-use/IBuffer.html
+SHA-256-Digest: ix1Odi5T8mDu96lb5vDmKNnIyMZh36qHqoEubE+D9ss=
+
+Name: javadoc/org/eclipse/net4j/signal/security/class-use/Authenticating
+ SignalProtocol.html
+SHA-256-Digest: 6mOZMYz+7qqy3Hv0/QjaOAkoOPL7qYmAdXAAAc9HwM8=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/InternalBuffer.html
+SHA-256-Digest: wlLRZlnlZzubj9z5xlqSXus8Cn5TVsjnIXw6as3SRyE=
+
+Name: javadoc/org/eclipse/spi/net4j/Channel.ReceiverWork.html
+SHA-256-Digest: RjI9fqsaG79FtksVeMYrSzGcx5F8ZGXvJRGoo2+clh8=
+
+Name: javadoc/org/eclipse/net4j/channel/class-use/IChannelMultiplexer.ht
+ ml
+SHA-256-Digest: ayJuIoX6duQz/Lg1kV3VUVHGlyCcUbWXRWo92+YZdCI=
+
+Name: javadoc/org/eclipse/net4j/signal/confirmation/ConfirmationPrompt.h
+ tml
+SHA-256-Digest: bo3sLdje8/MoQDVWJfFT1ZNMytHuIH+N+NnkTdG1irw=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/SignalCounter.html
+SHA-256-Digest: JmwuLYhhOrbQSWb3PFJRO4frE41tyNtm/zqFS3FiSFU=
+
+Name: javadoc/org/eclipse/net4j/connector/IConnectorEvent.html
+SHA-256-Digest: pAFbQdCJcBBij5yGvstUi82Cl/GkJ6y1jnhn9Nh8J3s=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/Signal.html
+SHA-256-Digest: rtTNGRc3o90zZPqxaDcWfQecrNg9V744Il2CjY6KY5k=
+
+Name: META-INF/maven/org.eclipse.emf.cdo/org.eclipse.net4j.doc/pom.xml
+SHA-256-Digest: V+QLoY1dqZuDWWUDXn+oDWw1wnDtBybtch/8UvqkkiQ=
+
+Name: javadoc/org/eclipse/net4j/tcp/ITCPActiveSelectorListener.html
+SHA-256-Digest: io3T0DJgoJdsqH2qa+WZtnUw7fPM15hGCCwuonpStcw=
+
+Name: javadoc/package-search-index.js
+SHA-256-Digest: LKUDN+7K4gTtkc8Hf495uQ6/E0PAbEh9J+Rsykf0PFI=
+
+Name: javadoc/org/eclipse/net4j/FactoriesProtocolProvider.html
+SHA-256-Digest: 1I9Z6yNuysXV+6wotUWhaDbX2dnDeyEtY0SJXCQyx9Y=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/ClientProtocolFactory.html
+SHA-256-Digest: L+TPHfy21HGcVusKvDqEeQX/6vWoio0wIbt0aS9t+8A=
+
+Name: javadoc/org/eclipse/net4j/tcp/class-use/TCPUtil.html
+SHA-256-Digest: JHyQozHnsyF6/b8Dtzu2t8MNw1vDRB77536lrIa+JUs=
+
+Name: javadoc/jquery/jquery-ui.js
+SHA-256-Digest: ge4Agx2Ur0gBWM+cJczCE8lomNp+HqpCydZgxvo0KtI=
+
+Name: javadoc/org/eclipse/net4j/ws/class-use/IWSAcceptorManager.html
+SHA-256-Digest: QWDp2h1Yo0NjRuS02rO8jSTooTEL02e6y+IjKGIXiQ0=
+
+Name: about.mappings
+SHA-256-Digest: 4Mpfeo/v2JZ2Lb3wZkuwm9DeQIcrnZt5PxGRABvOJZg=
+
+Name: javadoc/org/eclipse/net4j/acceptor/IAcceptor.html
+SHA-256-Digest: Qsg5cwPeB1Olx2dmg+NJ6orFgIFvn/9otuNvbMMZB58=
+
+Name: javadoc/org/eclipse/net4j/ws/IWSAcceptorManager.html
+SHA-256-Digest: 6Okq8wfg4I0kQn3rv6beTIC3rSyO+QkKNPkQLEsCZsw=
+
+Name: javadoc/org/eclipse/net4j/connector/ConnectorState.html
+SHA-256-Digest: h7jfBxve5iuvTf/aFzvaGDjGVj6zB4W/9GEmxp9JQlg=
+
+Name: javadoc/org/eclipse/net4j/package-summary.html
+SHA-256-Digest: XVQSq4hUcS0HNMjbhIQEcEFd32mGqRY14I9RHuE48TQ=
+
+Name: javadoc/org/eclipse/spi/net4j/AcceptorFactory.html
+SHA-256-Digest: eRCB/UHk2xJnLDlpEjw2zhNkJ8afJWuRVXyXBRFfOuo=
+
+Name: javadoc/org/eclipse/net4j/buffer/package-summary.html
+SHA-256-Digest: haqEB9OuSjXlkB5uT0k5/GFQfpWCHe2VNL183vsxWbk=
+
+Name: javadoc/org/eclipse/net4j/protocol/IProtocolProvider.html
+SHA-256-Digest: jOK0DOnN1lw+Kp7cwC93bPcnsjohkhgnbiBIUCGg0mw=
+
+Name: html/schema/index.html
+SHA-256-Digest: X6+9fp1kSt+MwwP8OusiEUCvdavlJxIetT1yvFhzET0=
+
+Name: javadoc/org/eclipse/net4j/signal/heartbeat/package-summary.html
+SHA-256-Digest: ZTgRxqF4dLlL2IZ9POas0iZyfz13G90imw7ZfUS+qPs=
+
+Name: javadoc/org/eclipse/net4j/tcp/ITCPSelector.html
+SHA-256-Digest: nzLaItzGFgdRuuCD53U7HZv8/YzztFk1HO/QNjvPpsQ=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/Acceptor.html
+SHA-256-Digest: ojdeSmJO2EQqsm0KkYfk5GRotPYJS7bQpAKqNk0kT98=
+
+Name: javadoc/org/eclipse/net4j/signal/wrapping/package-use.html
+SHA-256-Digest: jD9dAdPwzVLpB5xtSQxCqzCvjUhc/UXU7JnXikLnGP0=
+
+Name: images/editor-3.png
+SHA-256-Digest: iOgMM2r8lCk2UBDaz+KNFNqvzUK+1c1OrRTfO+UgFx4=
+
+Name: javadoc/org/eclipse/net4j/tcp/ssl/package-use.html
+SHA-256-Digest: Up6f0KBCPMEwJVas15SLrN9nl6sj4wPEuXfSMa1Ut1w=
+
+Name: javadoc/org/eclipse/net4j/class-use/TransportConfigurator.html
+SHA-256-Digest: Alh05zYJvQTNCle7z7/LLRqmHa3OLzYObSDd5xQ0fhk=
+
+Name: javadoc/org/eclipse/net4j/ws/jetty/class-use/Net4jWebSocketServlet
+ .html
+SHA-256-Digest: tFcmx77U5LF7/JrtAAHanCX3RQqn/QJh3nT22fnoOJA=
+
+Name: images/editor-4.png
+SHA-256-Digest: avRb7VaJJWwGEuvSi/gNdh/ZLNS8T+loarbat5egHa0=
+
+Name: javadoc/org/eclipse/net4j/ws/IWSConnector.html
+SHA-256-Digest: gkdwuh3XJvKmc1sSpiQAKVv/2UNAM1WYL3TkMgoL0rk=
+
+Name: javadoc/org/eclipse/net4j/signal/RemoteException.html
+SHA-256-Digest: z3JDqbfQnZBH0MSr1EriUhTkeMLx1/9OGcuOvN4RGSo=
+
+Name: images/callout-8.png
+SHA-256-Digest: aL4Y4Q5fnwSM02fZ4dInsaGrn/BrxIj/MzclzHR4sTE=
+
+Name: javadoc/org/eclipse/net4j/signal/wrapping/StreamWrapperInjector.ht
+ ml
+SHA-256-Digest: KzngJ4v5XDhVihGkamiyku7VW6gIdUSAtAqzyemUQDw=
+
+Name: javadoc/org/eclipse/net4j/ILocationAware.Location.html
+SHA-256-Digest: fTyp8HlJ10KZu3kQicVFZNWz7k293CtJKM4UcTsrz04=
+
+Name: javadoc/jquery/images/ui-bg_glass_75_dadada_1x400.png
+SHA-256-Digest: u+QYuP8pYYYGux6RQyVht6AI7yH46RNUYXPhVpESZIU=
+
+Name: html/tree.css
+SHA-256-Digest: 11wh+F/Rq/+KMgGN6JXP2HJW7LmtmS55/dTWFjM1UcY=
+
+Name: images/editor-left.png
+SHA-256-Digest: xLb0O6ah96fc2pB28JD2FXXoxkERMjATxgekc7tca3k=
+
+Name: javadoc/org/eclipse/net4j/jvm/package-use.html
+SHA-256-Digest: Et3ujAuPYb7rlZPYiKhVgqsTzDyuG3sTQDG+TCEIuDg=
+
+Name: javadoc/org/eclipse/net4j/ws/package-summary.html
+SHA-256-Digest: SbumAAVuiAoxjYotl6Kiu42XdM1FdaV/xoK9E4UsH/w=
+
+Name: javadoc/org/eclipse/net4j/connector/class-use/IConnectorEvent.html
+SHA-256-Digest: W5Cw1D/g/9l1602cbDf/b0jh5AJHhjMHP2uZM3ywuKI=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/RequestWithMonitoring.h
+ tml
+SHA-256-Digest: 6RJFAZyP5DVKMPjgTY6OaLbnCSJPIyYF7XfKcIInQBo=
+
+Name: images/editor-top-left-java.png
+SHA-256-Digest: BDNBGoBDL9EyoDc/ZY6N3GI52ap0H5v/KORO1w9L24Y=
+
+Name: javadoc/overview-summary.html
+SHA-256-Digest: Fsa5TU9IrG1Etyg0rn3KiO+WyMQwlW/qtCbMChQycyE=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/Channel.ReceiverWork.html
+SHA-256-Digest: huKU1udfAen4cbbI0V5Ck7wNyIdxkMI0vapBbigLfJM=
+
+Name: images/editor-right.png
+SHA-256-Digest: FO5JL1S/FnKvd+uCOBCOayLnG24fqdoB7YCGf+Kqf+s=
+
+Name: javadoc/org/eclipse/net4j/signal/wrapping/package-summary.html
+SHA-256-Digest: BR0M+ewgJEJowBK26o0hFe46OnZS9iyf/4fHnChjZGo=
+
+Name: javadoc/org/eclipse/net4j/jvm/IJVMAcceptorManager.html
+SHA-256-Digest: HbC5GejdNNvTruDIZqHHmwV/oc6MIImJCNwiSAkgqKw=
+
+Name: javadoc/resources/background.gif
+SHA-256-Digest: tB7Yzvm2yPD5JDE1TIFOk9FIVBx/K3XBfKms42P9ZwA=
+
+Name: javadoc/org/eclipse/net4j/buffer/BufferState.html
+SHA-256-Digest: I7lqhyLK+yWDnT9U3XsGdoFB6mx75ejs5HYL/+cc78M=
+
+Name: javadoc/org/eclipse/net4j/ws/class-use/WSUtil.html
+SHA-256-Digest: kBxWm3MkXM+H+XnYG69XzQVBXhRrcjn8ZI1NPqd0d1Q=
+
+Name: javadoc/org/eclipse/net4j/signal/wrapping/GZIPStreamWrapperInjecto
+ r.html
+SHA-256-Digest: z+m13PMYGx3W/he0gjdtaifAOjnYZaCsC7P5rE3Zar8=
+
+Name: javadoc/org/eclipse/net4j/protocol/class-use/IProtocolProvider.htm
+ l
+SHA-256-Digest: 5KtfC4yo2k14k0w0oI9qzsTIdmG2X9snIcQFt+44D+Q=
+
+Name: javadoc/jquery/jquery-ui.min.js
+SHA-256-Digest: 4aG3jz6BgIDQ6/jBB8aeIbUk3AAg+XaOd11T14tcRD8=
+
+Name: javadoc/org/eclipse/net4j/connector/package-use.html
+SHA-256-Digest: 9BIT0elnSwrcf9lnyCLCMDhzC6IOkbGiQUHtoj92hmc=
+
+Name: javadoc/org/eclipse/net4j/ui/class-use/Net4jItemProvider.RemoveAct
+ ion.html
+SHA-256-Digest: pvis+AFmn7FN4F6vdhX+4d2l+3EkeoBs1BWjgc35JvU=
+
+Name: javadoc/org/eclipse/net4j/TransportConfigurator.AcceptorDescriptio
+ nParser.Factory.html
+SHA-256-Digest: e75ZwMuGxU1u1L31lYSZ91O/g7WxSpwLaEcbxP6GVYk=
+
+Name: javadoc/org/eclipse/net4j/class-use/ContainerProtocolProvider.Serv
+ er.html
+SHA-256-Digest: Xf4Zn3/6vgR3CEJVft6pUmNwtCCfsIG7/Za1T6UWlt0=
+
+Name: javadoc/org/eclipse/net4j/buffer/IBufferProvider.Introspection.htm
+ l
+SHA-256-Digest: sgCe74xClTT7dMm52mStOQ3AwmuZ1qK1GR4Da+D8hok=
+
+Name: javadoc/org/eclipse/net4j/tcp/class-use/ITCPSelector.html
+SHA-256-Digest: K1MAFw+qaps5wCIbIcA3Vj9hQ72dcrMaUokbNP2I3wA=
+
+Name: javadoc/org/eclipse/net4j/channel/ChannelInputStream.html
+SHA-256-Digest: KvfDsH3bosXWKNtYX/lfjfR81MKUKuMwh/FAaYuftSo=
+
+Name: javadoc/org/eclipse/net4j/connector/class-use/IConnectorStateEvent
+ .html
+SHA-256-Digest: kVErKukzd0ohOddMUQUlKaBfFUP0eX/+UX/UKJ1ds2E=
+
+Name: javadoc/org/eclipse/net4j/protocol/package-use.html
+SHA-256-Digest: JdIf2i2F1OIDCMgzG5ILmkjDqxbH9/CGDXjK0aVBduQ=
+
+Name: javadoc/org/eclipse/net4j/buffer/BufferInputStream.html
+SHA-256-Digest: mIMQF6ae8ruZ/YTUNhRn9bZRZIDR0B4DqPbNNafWCpQ=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/Request.html
+SHA-256-Digest: +oIHR4M+xG5NCRNw1x3jJuWIfzO0Fp4FLUxlLdgqKUQ=
+
+Name: javadoc/org/eclipse/net4j/connector/IConnectorStateEvent.html
+SHA-256-Digest: 8ozN+CljXlyNJaw56MEUKlBUw/DqmNUqw45cjxeryYk=
+
+Name: javadoc/org/eclipse/net4j/buffer/IBufferHandler.html
+SHA-256-Digest: lg6/6iYC5OnBkJilKbGovfDIkk8RoguwYWbEJGh4Ia8=
+
+Name: javadoc/org/eclipse/net4j/ws/jetty/class-use/Net4jWebSocket.html
+SHA-256-Digest: 8GjR22fjGqO708dhXKdNhzJ/k82qlKuCF+QeueQloSY=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/Acceptor.ConnectorPreparer
+ .html
+SHA-256-Digest: 67Lnyx7nTbRi7crdo1IdNaEJARImfeS+u9W0hZ+rtfY=
+
+Name: javadoc/org/eclipse/net4j/buffer/class-use/BufferState.html
+SHA-256-Digest: FWCe4JH4DWzK9Grjc0vvy6g4Uy8szTerg0bsxgDVbcY=
+
+Name: images/editor-top-right.png
+SHA-256-Digest: 63u59qmagN0OMzc3dyquN7g4zJdUn1NSWNr6KCl+yhY=
+
+Name: javadoc/org/eclipse/net4j/TransportInjector.html
+SHA-256-Digest: QlyLdCLpIpcHf1zQiuKqFlI/tMtD0kG2rU9af87e+C4=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/SignalReactor.html
+SHA-256-Digest: dAzM8exRSyA+fTngBFMv1n1yw3J27bNpZu4Ope0bMHE=
+
+Name: images/formatter-tree.gif
+SHA-256-Digest: YbEKYq1OM2+ZJ6fY86vbVGYRWUJmh7lD0vdRbbe+G+A=
+
+Name: javadoc/jquery/images/ui-icons_cd0a0a_256x240.png
+SHA-256-Digest: DkXKwCzHUuHY4AniGXB0RDUSboauOAyqmxjKKFULtSA=
+
+Name: javadoc/org/eclipse/net4j/signal/security/AuthenticationIndication
+ .html
+SHA-256-Digest: R4I1HhDJMmTAFT+jEsA1BwgjDy0/hJfgxlHhOq5JtAw=
+
+Name: javadoc/org/eclipse/net4j/channel/IChannel.html
+SHA-256-Digest: mkCrdL1zvrBvCJMskV5jKSsWmZGfKkPbNynjJd0o42E=
+
+Name: javadoc/org/eclipse/net4j/protocol/class-use/IProtocol2.html
+SHA-256-Digest: 21xjblfjIWq5jyzU18VlsmIOVv2cIR+XFT6NB3GTraU=
+
+Name: javadoc/resources/glass.png
+SHA-256-Digest: YNXwWfEcX2H3f2EqLILSqJ628lsZ1oxRrj4dROrXwco=
+
+Name: images/plugin.gif
+SHA-256-Digest: ZsOwYc4ZMigs5KViOkp50rrZ53fxeEmt0UDx86Pc/rk=
+
+Name: javadoc/org/eclipse/net4j/signal/MonitorCanceledIndication.html
+SHA-256-Digest: /n4h0OeT3KJ2K+5L3U7xPl5ddbxye2n4hLOpCtj5X8s=
+
+Name: javadoc/org/eclipse/net4j/channel/class-use/ChannelException.html
+SHA-256-Digest: nVGL95wTdQUT/ZxWLkJIT0fuUFUhRevXYBfjmrEeaRI=
+
+Name: javadoc/org/eclipse/net4j/tcp/ITCPPassiveSelectorListener.html
+SHA-256-Digest: h9OmweWeEDj9NO6k8nQNIWj+YakzY16JUahzLFc63dU=
+
+Name: images/editor-5.png
+SHA-256-Digest: 6qUQIAkwwgsVgS5TVBobK9AuDOf95NDJxdkOhYLQjKU=
+
+Name: javadoc/org/eclipse/net4j/buffer/IBufferProvider.html
+SHA-256-Digest: D4rrqmOgETdv9ifOi+c8ehk5fuGlgpRBu9XSbaMh++I=
+
+Name: javadoc/allpackages-index.html
+SHA-256-Digest: thrGWo4ubTdY12dK+Dhez8Q6QVoTl95pKSSGKTBW21g=
+
+Name: javadoc/org/eclipse/net4j/signal/heartbeat/package-use.html
+SHA-256-Digest: Cg91FklyMkeC/ZmgXTSZlLxSDSt+EO1RFpIq2gmFz6U=
+
+Name: javadoc/org/eclipse/net4j/channel/package-use.html
+SHA-256-Digest: wEcqWqTJA4xGjDWXkIQ+Fm/dzPSK02lcZAgbMTy1KUQ=
+
+Name: javadoc/org/eclipse/spi/net4j/InternalBuffer.html
+SHA-256-Digest: 5AuqsVcIDAdPsit0PNsgGIgqE3N5jQSUo5gG2vVrwLg=
+
+Name: intro/overview.xml
+SHA-256-Digest: IHSuiYwc4DPt22ml02edJbdudC0rgvWBqf9zKbznsJ0=
+
+Name: javadoc/org/eclipse/net4j/buffer/class-use/IBufferProvider.html
+SHA-256-Digest: QkNQkNURpf9KYsdwjUWYoDcunSTGSYcL5j/vQZbpI3s=
+
+Name: javadoc/org/eclipse/net4j/signal/Request.html
+SHA-256-Digest: H0k2PuXv68DRWHqn7sDN9k9wdb/BVI8j0PRRhG0OZeg=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/Channel.SendQueue.html
+SHA-256-Digest: bbM3mX0YAMDuZdi5YIKBQL1rqr6pd1Els8wxITW5gzw=
+
+Name: javadoc/jquery/jszip-utils/dist/jszip-utils.min.js
+SHA-256-Digest: w4cGturSH1Y26pt5KXp5dsWfjB/5JCv2da7l3OOSzpg=
+
+Name: toc.xmi
+SHA-256-Digest: /9qymDqIdGS6H1nUJB+6NtwvYnzb0qMSfY3yADDxVs4=
+
+Name: javadoc/org/eclipse/net4j/signal/IndicationWithResponse.html
+SHA-256-Digest: Rq4XjRzI0nPoqpNVhHLqU0CjAcnJANUjHmluwge1vdE=
+
+Name: javadoc/org/eclipse/net4j/ui/class-use/Net4jItemProvider.html
+SHA-256-Digest: pH+7wsxpJ8pBs717F3ck8IDd9CkDZX+hRrYH4c00fL4=
+
+Name: javadoc/org/eclipse/net4j/buffer/class-use/IBufferProvider.Notific
+ ation.BufferProvidedEvent.html
+SHA-256-Digest: zvBxqUscf1A2GamAzYzKCNQeBK6CZuAXGUyFLnbnSZ8=
+
+Name: toc.xml
+SHA-256-Digest: /mjF6wvEAeLs9OcfuQCidRYuwx9/F7F9CXQQwdaYGdc=
+
+Name: javadoc/jquery/images/ui-icons_454545_256x240.png
+SHA-256-Digest: 15NtfvRzevcc3q+OzmEyxxwjlujrtwHUCXAG0yIkVXo=
+
+Name: images/callout-5.png
+SHA-256-Digest: +Dr1+W0AOlIYXNEtPgXIOlOIGimUni0z/gPd8XWu/Wg=
+
+Name: javadoc/org/eclipse/net4j/protocol/ProtocolVersionException.html
+SHA-256-Digest: wKq8rx6flnb0VmTBF1g8TovFLeco+pJjJLmdmWOZyI8=
+
+Name: javadoc/org/eclipse/net4j/signal/SignalFinishedEvent.html
+SHA-256-Digest: noMKkGuNC51pUAm8C0aVJQbfPdqvT8KcrIM2OqeZKhc=
+
+Name: javadoc/org/eclipse/net4j/ContainerProtocolProvider.html
+SHA-256-Digest: el3Hg2jLfJtf8Uv/vPpY3zFZsFAqXQGwf1DAPwT1q+k=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/InternalChannel.html
+SHA-256-Digest: 5/bRlpcHiF1niP+v45txvt6WT0aGh67Is38wQxlb0J8=
+
+Name: javadoc/org/eclipse/net4j/ContainerProtocolProvider.Server.html
+SHA-256-Digest: NCBl8ndkReBUexyjgufMWbug+CliD/UnDgRPL2Dyp4E=
+
+Name: javadoc/org/eclipse/net4j/jvm/class-use/IJVMConnector.html
+SHA-256-Digest: 9BbR1kQfse1DWhLz/I+rxt6arW4XDOaux9GkrBB/zRY=
+
+Name: javadoc/element-list
+SHA-256-Digest: OfHqAVjXulhX0i0Mez4UDLpzAdaZL4FguWTP9cI6Gg8=
+
+Name: javadoc/org/eclipse/net4j/tcp/TCPUtil.ConnectorData.html
+SHA-256-Digest: fLS/ex5PRL2svhxgj6fTPyGl33LmBm9QAHTJu9HSApc=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/RequestWithConfirmation
+ .html
+SHA-256-Digest: lSIWlDZ1yZEC6gTwJvu08gTJf0QtqHbHeQHM8NcvUdo=
+
+Name: javadoc/org/eclipse/net4j/ui/Net4jItemProvider.html
+SHA-256-Digest: SWd0+u3oqdYuWIYaUzVju2SDgC+KRI4RJWgVL27nBaE=
+
+Name: javadoc/org/eclipse/spi/net4j/Protocol.html
+SHA-256-Digest: wLeClgrUVNmvJ6Ljc2gDGLlnJCqSQWkvzJ/dRJK2H/o=
+
+Name: javadoc/org/eclipse/net4j/signal/confirmation/ConfirmationRequest.
+ html
+SHA-256-Digest: v9bCKDU3wEg8115QQMBq2TUrN84bGwfWcTGcn4OiWHA=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/SignalFinishedEvent.htm
+ l
+SHA-256-Digest: KKjX08/P8i8TrJlEyi0Ibl74EZMswDnwzgXAX5wHUbY=
+
+Name: javadoc/org/eclipse/net4j/buffer/class-use/IBufferHandler.html
+SHA-256-Digest: facSPMHpDbKgdMjntid7PP5oFa8rotYFQl1zyK6xjks=
+
+Name: javadoc/resources/x.png
+SHA-256-Digest: An8O0oMpY0vmRZMuGrfDIb8nuM+vmu0w8sv17kR4lSs=
+
+Name: javadoc/org/eclipse/spi/net4j/InverseCloseable.html
+SHA-256-Digest: egdkIa8LbXrFsHkyMP5Et+neC6cn1f/xHBEfKlIIPUk=
+
+Name: javadoc/org/eclipse/net4j/ws/IWSNegotiationContext.html
+SHA-256-Digest: z/G8qDG+ekVF+0VVLJx+bpjbdCTpd/OZN5UQEMdf8T8=
+
+Name: html/online/index.html
+SHA-256-Digest: ORGN0KgJQblVNz1FOMbd2bJW+O+wT6VSZNVeCRjgCM8=
+
+Name: javadoc/org/eclipse/net4j/tcp/class-use/ITCPPassiveSelectorListene
+ r.html
+SHA-256-Digest: EEClsot2n1pzbJxAHddDislImUIHJEzje69b3tzWNeM=
+
+Name: javadoc/jquery/jszip-utils/dist/jszip-utils-ie.min.js
+SHA-256-Digest: eUSRsihgsqkme2Mn4Zy0XLmZ0pDxZ/fIcgT/wv+H5Fc=
+
+Name: modeling32.png
+SHA-256-Digest: saSrfvJ79Uzl2BFpCbuVBho1UTuf14LrjD+wGJG44Ok=
+
+Name: html/editor.css
+SHA-256-Digest: ufH2Z3UXkQN0wRP52V69ohzPkONPSkkN8KLjCOTIZ54=
+
+Name: javadoc/org/eclipse/net4j/signal/MonitorProgressRequest.html
+SHA-256-Digest: TL7RB9jXlmi2qhaDJHAPSTR3XuLooofRao9pwvSUdEk=
+
+Name: javadoc/org/eclipse/net4j/signal/wrapping/class-use/GZIPStreamWrap
+ perInjector.html
+SHA-256-Digest: z/oX/Ef7XSvGeVoEyqKtCIANtr1UppgMyiu7bZ50QF8=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/Channel.ReceiveSerializer.
+ html
+SHA-256-Digest: 2SYBX4MrdBtkFEcwm9v4CkupumZy83GRESKDP99RcDM=
+
+Name: javadoc/org/eclipse/net4j/signal/confirmation/class-use/Confirmati
+ onRequest.html
+SHA-256-Digest: hGkX1yUt7rmxkYk7s7K09+IoqozMcEuijvOMkIgnKP4=
+
+Name: javadoc/org/eclipse/net4j/connector/IConnector.html
+SHA-256-Digest: xitZNJrCrKRPjdG1fDpnnvtCQvHiyDWuMSlTGTIZ4Rc=
+
+Name: html/book.css
+SHA-256-Digest: BZfkcXgp4pla3wKL6Ujl3UNJELnuWxnCfliDpICtnhg=
+
+Name: javadoc/org/eclipse/net4j/protocol/class-use/IProtocol.html
+SHA-256-Digest: teB5ZikhLa1oJL1Z+3vjH7Njmis7GEv1q07ybUYFXKc=
+
+Name: javadoc/org/eclipse/net4j/buffer/IBufferProvider.Notification.Buff
+ erRetainingEvent.html
+SHA-256-Digest: mJVpSyU3vTaxnL2+8oKYVx/YJbrlVdn1AJ8aF+AEmc4=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/ChannelMultiplexer.html
+SHA-256-Digest: bIvGiIBOzg1Tq6ZaQ2VCwpMoHrOSvGiq3+CYg/WpbB0=
+
+Name: javadoc/org/eclipse/net4j/class-use/FactoriesProtocolProvider.html
+SHA-256-Digest: blzfXcrNQIrgozy6ou4SRJy5nVFBo8R/jCv2hsZ83lQ=
+
+Name: javadoc/org/eclipse/net4j/ui/class-use/AcceptorContentProvider.htm
+ l
+SHA-256-Digest: onQMBW0wj0cErwMyJ5zvOowUKevTEU4KQzgHGJCJp64=
+
+Name: javadoc/org/eclipse/net4j/ws/jetty/Net4jWebSocketServlet.html
+SHA-256-Digest: KBXVzv7EyK1ZPUd9+c3j20cK3FFAw9V4HGaXtFKUeOs=
+
+Name: javadoc/org/eclipse/net4j/tcp/class-use/TCPUtil.AcceptorData.html
+SHA-256-Digest: vpeXCmrKreLbgUSPi4JDThAAHiCgNP7MW1yII6v8PjI=
+
+Name: javadoc/org/eclipse/net4j/TransportConfigurator.AcceptorDescriptio
+ nParser.html
+SHA-256-Digest: WbWAX1pKhF3hKwJXS5/71oenK0gDY+HtIeLlmTN+Ec8=
+
+Name: images/extpoint.gif
+SHA-256-Digest: iat6lRiGVTvoNzT6BewepyrD6l3BKHp6kT4RQolfC70=
+
+Name: javadoc/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png
+SHA-256-Digest: va/0Wms8SnWlvGLCfR435hl0xATCqWEOsq5ZTwvutqg=
+
+Name: javadoc/org/eclipse/net4j/buffer/BufferOutputStream.html
+SHA-256-Digest: sMQTZXSfkgZk1QURr0hXV/b4ooL7X2/OnE9wrHPErso=
+
+Name: javadoc/org/eclipse/net4j/signal/heartbeat/class-use/HeartBeatProt
+ ocol.Server.html
+SHA-256-Digest: h7xtVAduTFwLY52LL05/Lj2/SoHnWPgK3RSXPjX82mI=
+
+Name: javadoc/org/eclipse/spi/net4j/package-use.html
+SHA-256-Digest: z/E67xNHCKu6tFA9OCFiUhVO45bh1fzPuup4tgIctbY=
+
+Name: javadoc/org/eclipse/net4j/class-use/ContainerProtocolProvider.html
+SHA-256-Digest: 0wqhcLuJHdNcUv1rmEJga0QGQGMl6DlT1cw8MzJ7o1k=
+
+Name: javadoc/jquery/jquery-migrate-3.0.1.js
+SHA-256-Digest: XAPbNuJnmzsA4By4PQI/Ehhi6VkyC+avw8YO0pUyTXQ=
+
+Name: javadoc/org/eclipse/net4j/signal/heartbeat/class-use/HeartBeatProt
+ ocol.html
+SHA-256-Digest: T3EBz2exL0/zhL2GJ6AWi/JfEZF8mdpuUEvwQNQDbko=
+
+Name: images/callout-6.png
+SHA-256-Digest: LjNc5Pu0gQs1V8wyc8KupCdChZ7EMEgcsbG4NjL0mMY=
+
+Name: images/category.gif
+SHA-256-Digest: cBt5h1QpT3QywZmZrBzxdRRPzCGBQsD8pGWQYE7DItg=
+
+Name: javadoc/org/eclipse/net4j/class-use/ContainerProtocolProvider.Clie
+ nt.html
+SHA-256-Digest: tp+UFlJwtMmnF46M79lQq7GYpqPNomwwxIcnonK+dyM=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/MonitorCanceledRequest.
+ html
+SHA-256-Digest: YHI77EpAhK5iiB4fLbbBOsP7lAl21j+rq2VL40QK6a4=
+
+Name: javadoc/org/eclipse/net4j/channel/class-use/IChannel.html
+SHA-256-Digest: biL14wjEdephxR8Uevs3OhyKUSV0qyFZ/+iU4yDq54c=
+
+Name: javadoc/org/eclipse/net4j/signal/security/package-summary.html
+SHA-256-Digest: Y9W7X6IAy+VSYCCMRkK9zVKvxJLPN2xdsQ1A3+pzFSU=
+
+Name: javadoc/org/eclipse/net4j/channel/ChannelException.html
+SHA-256-Digest: b/DFfMK7Cs0MuzDqAHO2IZlNBEHkU7dwYEm/8zJuqX4=
+
+Name: javadoc/org/eclipse/net4j/buffer/class-use/IBufferPool.Introspecti
+ on.html
+SHA-256-Digest: O4cQ3KWEhv6C7OfTwVtQBV59llUYCTj135fmKKJXKCU=
+
+Name: javadoc/org/eclipse/net4j/jvm/class-use/IJVMAcceptorManager.html
+SHA-256-Digest: gQFEyeOLhFYMcfokliuzAaoAQWjQsDAmW7TalunOdHc=
+
+Name: javadoc/org/eclipse/net4j/Net4jUtil.html
+SHA-256-Digest: pBxoL8kXJ2c/DIBb5B/u4lkHgBUPsqaDXMPYr62e8Qw=
+
+Name: javadoc/org/eclipse/net4j/channel/package-summary.html
+SHA-256-Digest: c3t190JZXaxtXpN69+ufNQCCIBTj1PHXyvhQKRd4hEw=
+
+Name: javadoc/org/eclipse/net4j/connector/package-summary.html
+SHA-256-Digest: PGQJfuzuURCdgwxNTQQX5g0Xgar6XuiBSJ7/NHI3L6E=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/Connector.html
+SHA-256-Digest: aAYXGkZ9c+r2V9B7XweBC+uV8RPv25n4i+7iPkc2slU=
+
+Name: javadoc/member-search-index.zip
+SHA-256-Digest: J9IN78pfEuRdECrlX/8V19qK9uMdznEUHGJOuVKIArs=
+
+Name: images/empty-icon.gif
+SHA-256-Digest: nZm2rEx8czvQ/LHIXLYIMRS6ZpTkiuoXwqmPQhVSE7k=
+
+Name: images/package.gif
+SHA-256-Digest: EZPZadqTzMYVqSnpvt1ksENpA6RZ+UefMr7MiGwUO2c=
+
+Name: javadoc/org/eclipse/net4j/jvm/class-use/IJVMAcceptor.html
+SHA-256-Digest: JcA2MPDvYIir8AxJsTjF9nZwCsbo+zGdEbx97ZWefYg=
+
+Name: images/backward.png
+SHA-256-Digest: rZGGYCmb0kjy1mX4xvs2zXHFHErxkADBMMQFdaKb8Fc=
+
+Name: javadoc/org/eclipse/net4j/buffer/class-use/IBufferProvider.Notific
+ ation.html
+SHA-256-Digest: XXl3/BhORIpFjD2u1CKaROfF16ddE3fZ8UPd3NFfMjE=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/SignalProtocol.html
+SHA-256-Digest: SWl4VQUQvU2kyQmzATiyb4NG1Q2x93UUW6/Jl8H+TB8=
+
+Name: javadoc/org/eclipse/net4j/ui/AcceptorContentProvider.html
+SHA-256-Digest: IZbmNYBVFKyE3Lz7KefWAegTGimMj154taENxaOTdGM=
+
+Name: javadoc/member-search-index.js
+SHA-256-Digest: 2b98kGyta5CUnZrkOqMCubXLdg/Ga9kj0SlJJ1QZg6I=
+
+Name: javadoc/org/eclipse/net4j/class-use/TransportInjector.html
+SHA-256-Digest: MUVrHRyQ0Ntp1Uz6gXzfrvKFcT1CxqMrxmeXJr72wTI=
+
+Name: javadoc/org/eclipse/net4j/ContainerProtocolProvider.Client.html
+SHA-256-Digest: uCc1YWtkEiqNMERbaK1m79ADYiaJgIBnDb+21Esl2LY=
+
+Name: javadoc/org/eclipse/net4j/tcp/ITCPConnector.html
+SHA-256-Digest: 2t5es2olpTV7lIEFYqOk4Cp/72Do2TARIq+5+A26QFg=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/ChannelContainer.html
+SHA-256-Digest: 7Mkn++WoHCK8PdJtRClAjvFImlZyXxaGOG1WdVkNW5E=
+
+Name: javadoc/org/eclipse/net4j/signal/confirmation/class-use/Confirmati
+ onIndication.html
+SHA-256-Digest: 9M7ZMhLwglso9UrxFYSw6ovvkpGF0pRAPWg8nBThIVM=
+
+Name: javadoc/org/eclipse/net4j/buffer/class-use/BufferInputStream.html
+SHA-256-Digest: DupFTVn+KftjiaiS1NwcMpMKDo0zMhfQkTjf21pgQA8=
+
+Name: javadoc/org/eclipse/net4j/signal/security/package-use.html
+SHA-256-Digest: yhxWAXe2/xDUCVtYVnqT12CxTEQLXSC+RowMG6sSsQI=
+
+Name: images/external.gif
+SHA-256-Digest: dOBdLrZafBGpu/MMX/LLlLLCpIpqIlhp3p2yyY8gACg=
+
+Name: javadoc/jquery/jquery-3.3.1.js
+SHA-256-Digest: 2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/Channel.html
+SHA-256-Digest: rneH7pymhJPJmhsmPShJHrv9zI3KZipqaAtl4/C/pPY=
+
+Name: javadoc/org/eclipse/spi/net4j/Acceptor.ConnectorPreparer.html
+SHA-256-Digest: 9Gj/dQiRWGnyLcfwht1QF1SYsweu0/fpLVmYyINlfdk=
+
+Name: javadoc/org/eclipse/net4j/class-use/Net4jUtil.html
+SHA-256-Digest: eIPks4hVeG6quTn0qM2Po6owrx5vwylCVtlrH6qfENU=
+
+Name: javadoc/org/eclipse/net4j/class-use/ILocationAware.Location.html
+SHA-256-Digest: nASjS+b5qT/Yk/44WzkCjZq9uGherbjBJ+0PuDs59Gc=
+
+Name: javadoc/deprecated-list.html
+SHA-256-Digest: t3JlvfnyBK0oPx01IGRdFJ8LQMH75C+5CDn1Rjdl7MM=
+
+Name: javadoc/org/eclipse/net4j/jvm/class-use/JVMUtil.html
+SHA-256-Digest: Y7F94YWUVvujuriFdJw4DKEiqWKG1t5TX/jeVDOgFgY=
+
+Name: javadoc/org/eclipse/net4j/class-use/ITransportConfig.html
+SHA-256-Digest: dGqdmG2gjl1PpDfAWnUK3Ycuf5nMZGjwDNKaprwjzCU=
+
+Name: plugin.xml
+SHA-256-Digest: QvosXeEQiAcA+93+DCslbnTB50r/WcvL7v2VAe/aXiE=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/MonitorProgressIndicati
+ on.html
+SHA-256-Digest: 7AgCoEZ/eBN6tQ8QqCyrYE+U/GaUBw9NUUVaAGb3b/8=
+
+Name: javadoc/jquery/jszip/dist/jszip.js
+SHA-256-Digest: Enl+wsZp82s9n4vXTr9/sUu2ydUCX8pE95doq/s4GcU=
+
+Name: images/editor-bottom.png
+SHA-256-Digest: XZbs17G9yXHztnBiOTl70kT1uLxRIqVpReAYexNBeVs=
+
+Name: images/formatter-tree-properties.gif
+SHA-256-Digest: bMYkavZR3mQJofvnpNdpMmDCzP3gruV/KmzXVNDcZ/M=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/ServerProtocolFactory.html
+SHA-256-Digest: LGfd0i1gP4ANDF1kOVbzGhwyMvwuOKzi1+hVN6g7MvM=
+
+Name: javadoc/org/eclipse/net4j/buffer/package-use.html
+SHA-256-Digest: cnZ7ahtmBu79E9+pDulfAZwW6Gmt13ijOvPJT/I3KHM=
+
+Name: about.ini
+SHA-256-Digest: eHHHTqN7Y2eiBZGYdFDZeacrMj29Mm7niUh+P3i42Ao=
+
+Name: images/editor-top1.png
+SHA-256-Digest: LsAS0nk0PPKVVhkt55nHEtEe7nGN6pQsWsYkZf3vuhA=
+
+Name: javadoc/org/eclipse/spi/net4j/Acceptor.html
+SHA-256-Digest: 7a2nDrZtqcqTQhsXvJOUL8RSkXtYTJILPf7SWfcyygU=
+
+Name: javadoc/org/eclipse/net4j/ILocationAware.html
+SHA-256-Digest: zoYfPlXkVzDDLLy/s/pD3jpPj0OZpnX28BcGrj6ytMo=
+
+Name: javadoc/org/eclipse/spi/net4j/ConnectorFactory.html
+SHA-256-Digest: tfI7Otbt3hcVUD9OmcjtY5VDeserovXVV7vZVj0B3wQ=
+
+Name: javadoc/org/eclipse/net4j/signal/SignalActor.html
+SHA-256-Digest: 4nOvjnNyO2JexDxLEhsJgFQON0uDt7PcFEhp/Z02DpU=
+
+Name: javadoc/jquery/jszip/dist/jszip.min.js
+SHA-256-Digest: PZ/OvdXxEW1u3nuTAUCSjd4lyaoJ3UJpv/X11x2Gi5c=
+
+Name: javadoc/org/eclipse/net4j/signal/MonitorProgressIndication.html
+SHA-256-Digest: jjXUEPNxTzTxQmDG+wLTX6wYQDTRI7+UEfQW4eAvauk=
+
+Name: javadoc/jquery/external/jquery/jquery.js
+SHA-256-Digest: 2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=
+
+Name: javadoc/org/eclipse/net4j/channel/ChannelOutputStream.html
+SHA-256-Digest: SD1NNgThRWgiczd44bN2WQO1O6ssm7uKaFKGSWvtdn0=
+
+Name: javadoc/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png
+SHA-256-Digest: NKwY267GeuhgtUqwQaI5pMM/wXBDUpd3txJPsADQ11o=
+
+Name: javadoc/org/eclipse/net4j/signal/security/AuthenticationRequest.ht
+ ml
+SHA-256-Digest: CLVlG1l65KDYRztia+3Fj0qwF31hS07fgqeed8Ny+k8=
+
+Name: images/editor-max-hover.png
+SHA-256-Digest: 3NhxGkmBil8CggIK8btPEZrTgiNF3BiJxm93ALa8R2s=
+
+Name: javadoc/index.html
+SHA-256-Digest: vwjftq8OvxO0H00bzdW/T0anpvV2Ec5SUqb4rWQKCvc=
+
+Name: javadoc/org/eclipse/net4j/buffer/class-use/IBufferPool.html
+SHA-256-Digest: XfQUgyf5anGmMB98MPQCGNvB30UTqBQAxDLetyrDTNw=
+
+Name: javadoc/org/eclipse/net4j/jvm/IJVMChannel.html
+SHA-256-Digest: kj4qk8KhlV/BoR3NTEI3P7WUwtJFPNmJauXFfU7shZQ=
+
+Name: javadoc/org/eclipse/net4j/jvm/JVMUtil.html
+SHA-256-Digest: 4rtvjLoByZ2Dq84Y+u1BClS7wONVWkPgrVRhrNVQvzY=
+
+Name: images/callout-4.png
+SHA-256-Digest: i7Za/Q3WIfFAvGYpMZfPgoFtN5BgFSjngjlhQ+pHvls=
+
+Name: javadoc/org/eclipse/net4j/tcp/class-use/ITCPConnector.html
+SHA-256-Digest: zMAyFDjBCXj+wbRSzZYQh+0kF8iG1VEFZUzoLBhutY8=
+
+Name: javadoc/org/eclipse/spi/net4j/ClientProtocolFactory.html
+SHA-256-Digest: D+U+lb5N8UH/mSRF8T3VWg7Jp82fH9umsqFNHkqrjgs=
+
+Name: javadoc/allclasses-index.html
+SHA-256-Digest: xw5UWATgg8hVCZlF3Vt61Js6jzfZMXN7o3FdIR157+I=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/InternalChannel.SendQueueE
+ vent.Type.html
+SHA-256-Digest: X4Ies8lw7ZgqaP8tlvXBbkOl6XMWMP4Esmh2D+DrKYk=
+
+Name: javadoc/jquery/images/ui-bg_glass_65_ffffff_1x400.png
+SHA-256-Digest: TXzA/peia8wHZXsM0TDjyHptsi2E1Jjm3ndZ0L76lYg=
+
+Name: javadoc/org/eclipse/net4j/signal/security/class-use/Authentication
+ Indication.html
+SHA-256-Digest: HfunWnku8HY++XRkZdXSUbIidcU1YJJwmd5XVL+vfNg=
+
+Name: javadoc/org/eclipse/net4j/signal/AcknowledgeCompressedStringsIndic
+ ation.html
+SHA-256-Digest: TRxxacyC5/hlxEDPm82cOU8k2kCojXLmGj8ghmegtBU=
+
+Name: javadoc/jquery/jszip-utils/dist/jszip-utils-ie.js
+SHA-256-Digest: DOhExMICw1LjIQph/AkQA5pwcIRTsNtvKdTalJbycR4=
+
+Name: javadoc/org/eclipse/net4j/signal/wrapping/XORStreamWrapperInjector
+ .html
+SHA-256-Digest: 8s3/V65FqCBEY5uMj1viI1MsgBWBUnNfoRaSH4jHh6M=
+
+Name: images/editor-close.png
+SHA-256-Digest: iOgMM2r8lCk2UBDaz+KNFNqvzUK+1c1OrRTfO+UgFx4=
+
+Name: javadoc/org/eclipse/net4j/buffer/IBufferPool.html
+SHA-256-Digest: jE5r0buGWTFsO8IqO+8ATgolIByWhN0PIhl1dcSD1mo=
+
+Name: javadoc/org/eclipse/net4j/ws/jetty/Net4jWebSocket.html
+SHA-256-Digest: BFfNdESQYrgXeJ8UWLxDfcmxTOYqI3gv787KgH3Ftb8=
+
+Name: javadoc/org/eclipse/spi/net4j/InternalAcceptor.html
+SHA-256-Digest: 8/b2pfRxIU9NitR/15FcAED6hwExxIlzFP2j9eVGfoM=
+
+Name: images/background-1.gif
+SHA-256-Digest: 0JNVqqFa4wQsCV3dTczjHOUdpn4ePEHfS97qc37joW0=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/InternalConnector.html
+SHA-256-Digest: BxddlUf689QiBb6LD3meUhXwhCXGelAEGrpkJOrPRxQ=
+
+Name: javadoc/org/eclipse/net4j/signal/SignalProtocol.InvalidSignalIDExc
+ eption.html
+SHA-256-Digest: ul4mTgC4OnjVz4a5LhSUfYaW2FNwaHSl8GBJjC85OZA=
+
+Name: javadoc/org/eclipse/net4j/signal/wrapping/class-use/XORStreamWrapp
+ erInjector.html
+SHA-256-Digest: 0QCjN4gAQpdFa8Z/TedXI5Gn5CaQ5WcebV++spD9Opg=
+
+Name: images/formatter-xml.gif
+SHA-256-Digest: 9M/U7mn24+olvbiAdaiS3aJo6iHZ/l8E9GIiTy+hm5o=
+
+Name: javadoc/org/eclipse/net4j/signal/security/AuthenticatingSignalProt
+ ocol.html
+SHA-256-Digest: oMfuF065dbhojJcgbmcofUxQr0S39igjrJAzV1kfhVU=
+
+Name: javadoc/org/eclipse/net4j/ws/class-use/IWSConnector.html
+SHA-256-Digest: Ofwfibx+Wx8lBNuujcdxX9GMm7kj8mUL56q+CnHWYPQ=
+
+Name: javadoc/index-all.html
+SHA-256-Digest: AsWatFgHsw5S+v0dZFmLsWmKCUs8YHPX1iToT4co4dc=
+
+Name: images/editor-top-left-xml.png
+SHA-256-Digest: lXTpf9ZTGCk+Ue5C0RK+R2Ylw4NRazLqEed5SZhjCDw=
+
+Name: intro/css/graphics/net4j_hov.gif
+SHA-256-Digest: OTA/BDvRe+GUd4cOMZSo9D8d+ym5Q3wrp0KGUDIqUwM=
+
+Name: javadoc/org/eclipse/net4j/signal/SignalReactor.html
+SHA-256-Digest: QeaR+NVyYSZz4f7KKLVPJGlYXNV7rFoJXfib7FUFzyQ=
+
+Name: javadoc/org/eclipse/spi/net4j/package-summary.html
+SHA-256-Digest: mqHhJEnO7IAEu/DLAffgXtMlz5iY4mOIPnlsjqunmyE=
+
+Name: javadoc/org/eclipse/net4j/signal/package-use.html
+SHA-256-Digest: PI2qzS8iv9S5rKTJ3WDEzaLWHy9VJDlnOtcf7zMVbvw=
+
+Name: javadoc/org/eclipse/spi/net4j/Channel.ReceiveSerializer.html
+SHA-256-Digest: Uf794Leu6wdw/Qa2P7Jk2SBnPI95arQWBZANHzXLpNc=
+
+Name: images/editor-bottom-right.png
+SHA-256-Digest: pY4sB+DHXmeaUlf8LeldyqlFH2nV9Tbyem2m4Cre7pk=
+
+Name: intro/css/net4j.css
+SHA-256-Digest: HCEJ+lJZevNzQ41qPg/gcmwzi83tu8A5K+AH4Cx8fVs=
+
+Name: javadoc/org/eclipse/net4j/signal/AcknowledgeCompressedStringsReque
+ st.html
+SHA-256-Digest: 8wLjpIh969mUPskQQw6neYO3AfeAmWWKdBgcyRgmQf4=
+
+Name: javadoc/resources/Net4j-Multiplexing.png
+SHA-256-Digest: 3QEqfbiRiP9Wq/k6gS5JSNB4p98hymPMujqMXNemVGM=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/IndicationWithResponse.
+ html
+SHA-256-Digest: LuvHGatk1MeFYN0fZfjoEq1YL3aU1gqdZR8aADeK6No=
+
+Name: javadoc/org/eclipse/net4j/signal/package-summary.html
+SHA-256-Digest: J+nqwtxviCcLIcs4UzgOEUiAodI1j/Ly64YAYafR4oA=
+
+Name: images/editor-bottom-left.png
+SHA-256-Digest: kJ18GfGUNogVgxdCS78Rz/Jgg1r6cFhCYea2+b/C4gA=
+
+Name: javadoc/org/eclipse/net4j/tcp/ssl/package-summary.html
+SHA-256-Digest: 9r/B55AC8ck/MhVGKJSjikexsFTYQ+6LVDfn4pXuSuY=
+
+Name: javadoc/org/eclipse/net4j/signal/heartbeat/class-use/HeartBeatProt
+ ocol.Server.TimerInjector.html
+SHA-256-Digest: 1gZhWnk1nXiNnnkXe10DVUPaAFIQsNhPCuiJRSf9Oo0=
+
+Name: javadoc/org/eclipse/net4j/ITransportConfig.html
+SHA-256-Digest: SWAJJUcySToEDEXCX3cND4KGFwd74YunSnfs8A3R3RQ=
+
+Name: javadoc/org/eclipse/net4j/buffer/class-use/BufferOutputStream.html
+SHA-256-Digest: f3D6gvcaHac3n0qlkvaAaBdkSFcDnA5wDqzx/XkrH1s=
+
+Name: javadoc/org/eclipse/net4j/signal/confirmation/package-use.html
+SHA-256-Digest: Al1//+PSDlTYC5J3NhqbFXbFoefZfEWqCoHzAwdomgY=
+
+Name: javadoc/org/eclipse/net4j/jvm/IJVMConnector.html
+SHA-256-Digest: VuDrUUvolvUQ8VjZLnFIQmFo8h9YDPQfCrXVnyi2JXQ=
+
+Name: javadoc/org/eclipse/net4j/connector/ConnectorCredentialsInjector.h
+ tml
+SHA-256-Digest: YeuvHjP8BtGdn4fubFTrlYxDsZjNUZjMGxB861MFcGY=
+
+Name: javadoc/org/eclipse/net4j/jvm/package-summary.html
+SHA-256-Digest: t4ciRuaJgiihsWBqEG/a2N8rMoEmuFQiygN2U/g3MtU=
+
+Name: javadoc/script.js
+SHA-256-Digest: YKzlJc8GK1GvzQFls21tWTx3IGN+eLxEwINxf5J+5xo=
+
+Name: javadoc/jquery/jquery-ui.css
+SHA-256-Digest: xV5kibqTt8qINozN1j33xfxUyIctdgDEy2osoLLAE9Q=
+
+Name: javadoc/stylesheet.css
+SHA-256-Digest: GQVKTx0XpLeIZRI+UZUvvKmrtz0F7Fj272VQIB4djLU=
+
+Name: javadoc/org/eclipse/net4j/ws/WSUtil.html
+SHA-256-Digest: lST/oSiuKoR+Zxk8IcEzGyr528WR+/uScXfTVD1H8cI=
+
+Name: javadoc/org/eclipse/spi/net4j/Protocol.InfraStructureChangedEvent.
+ html
+SHA-256-Digest: 9SuyroNTZOmg1E/Mm8p6fu63o7NurfR3Ugf0UlUBCzQ=
+
+Name: images/editor-top2.png
+SHA-256-Digest: avRb7VaJJWwGEuvSi/gNdh/ZLNS8T+loarbat5egHa0=
+
+Name: javadoc/org/eclipse/net4j/ui/package-use.html
+SHA-256-Digest: zBzb+ktVTa4zco3dl5kWmJE7h2dEtX78UEZMTjhm0SE=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/AcceptorFactory.html
+SHA-256-Digest: +5jeFLiOT8xvBUWpYScSNJiMJ+3BNfRwpqgGqkdf2rA=
+
+Name: javadoc/org/eclipse/net4j/signal/confirmation/package-summary.html
+SHA-256-Digest: 3tTmYUulWrRQ7STtfuBaClPEG/ha+VA8nQ2UWF8BQAs=
+
+Name: javadoc/allclasses.html
+SHA-256-Digest: fka3AoBgsbOODAG9vyL7H3J20+ouSwaTt4XS4Rqpk3E=
+
+Name: javadoc/type-search-index.js
+SHA-256-Digest: TS6Bjb7+W/g28MgFg7cXd1BLlUS5SYJA/W8mL+nkc2Q=
+
+Name: javadoc/jquery/images/ui-icons_222222_256x240.png
+SHA-256-Digest: 3ajr3yNfsckCQ4y5E9UVPS/p6Kaqi6/FfaSx/yjjerw=
+
+Name: javadoc/org/eclipse/net4j/connector/class-use/ConnectorCredentials
+ Injector.html
+SHA-256-Digest: vkbWqI8Z1H86gQ1lQlIw7H3YAonooIG8y2j0fjQG8EM=
+
+Name: javadoc/org/eclipse/net4j/ws/IWSAcceptor.html
+SHA-256-Digest: VkKzTe+dyFe5OyABzpxJ44TtxW7EzDM7LxhBlB5buS0=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/AcknowledgeCompressedSt
+ ringsIndication.html
+SHA-256-Digest: OL8nlqGEgt0ViTE8wEBw8veAKJxdm05u67pwpPyndTI=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/SignalScheduledEvent.ht
+ ml
+SHA-256-Digest: co3HypbVJzkkTWrlRlmCSGItyAi4RZ4c5rq1Mfady/8=
+
+Name: javadoc/org/eclipse/net4j/protocol/IProtocol.html
+SHA-256-Digest: sYqZOKKcies3a1xu3RxThBDkIEjPuE05g43p5Pupt0Q=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/ISignalProtocol.html
+SHA-256-Digest: vhWDUZpHpArdeIIQuongs3UbzGcAo0HAe6TUFx5UCu0=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/AcknowledgeCompressedSt
+ ringsRequest.html
+SHA-256-Digest: SB1z/Gu5EML4ROrk+45JSjX0iXKQzoGpA8Gu7uxdVQo=
+
+Name: javadoc/org/eclipse/net4j/ws/jetty/package-use.html
+SHA-256-Digest: vduSsIGw0YI0vfLOAp4skLx4cufxeIROnViLJov0yMI=
+
+Name: javadoc/jquery/jquery-ui.structure.min.css
+SHA-256-Digest: 1pjEqT0dbEVUp7Z/pI/0o+qItp6IgcTZV0i6r8dtwP8=
+
+Name: images/editor-max.png
+SHA-256-Digest: eLXvGObAjd8H13dIj7DWMdpxBh6OMvUXmxf+6hDYzhQ=
+
+Name: javadoc/org/eclipse/net4j/signal/IndicationWithMonitoring.html
+SHA-256-Digest: iBqkK16Vg+0I6YgREJrUOR4Ow0JwLhRaiyHBvLs5S+g=
+
+Name: javadoc/org/eclipse/net4j/ui/class-use/ConnectorContentProvider.ht
+ ml
+SHA-256-Digest: D/7ZnYjf84cr6VJUAMVow9KgOHi24+A4k+wPh372mgA=
+
+Name: javadoc/org/eclipse/net4j/tcp/class-use/ITCPNegotiationContext.htm
+ l
+SHA-256-Digest: XExVJMxHjrBfQBkP2aTI6wN7FRNxk7zqtwII3Sn8f78=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/InternalChannelMultiplexer
+ .html
+SHA-256-Digest: MUppn5KUZe6W/miNb+vQHGYvB0P6I5YJAE08wBQtr30=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/InternalChannel.SendQueueE
+ vent.html
+SHA-256-Digest: KjpNkKC/8VXgavjS6UZvz+8Xucb2LWIqQtpojFliqIE=
+
+Name: javadoc/org/eclipse/net4j/acceptor/class-use/IAcceptor.html
+SHA-256-Digest: XQM2UYPp2oLuKQlCh3GNghU+HfUTHX/2eEXG92XkOgw=
+
+Name: javadoc/org/eclipse/net4j/ITransportConfigAware.html
+SHA-256-Digest: Lc0GiOnNh/LfV96kaCTLBk1B8FMmZ5cJy6hh0TCUghI=
+
+Name: javadoc/org/eclipse/net4j/ui/Net4jItemProvider.RemoveAction.html
+SHA-256-Digest: FQtl+APVA9vG6Wo589NdKWajDQ9VlBdvjlUtFcJjiuk=
+
+Name: javadoc/org/eclipse/net4j/class-use/ILocationAware.html
+SHA-256-Digest: jT0lYnJvCoHiusVH1y6L+uZc2jUm0V17ZzjDswjl+54=
+
+Name: images/callout-3.png
+SHA-256-Digest: L3+QCHYtQoveNV+0YCAOnqdb38xIisbJOPVTacTcT+M=
+
+Name: javadoc/serialized-form.html
+SHA-256-Digest: m1l3e4CW1QxqtJvqA9TvetGw0FwbPC8oYgIPiXOZ1fQ=
+
+Name: images/article.gif
+SHA-256-Digest: W1SXQdPwwTrdZA2VuRK90U8mIMhms8qKfBoDSXocMpI=
+
+Name: javadoc/jquery/images/ui-icons_888888_256x240.png
+SHA-256-Digest: k82ak2MAmL2vjHCjzV9gJIg0h/O/meiOja/n3vv+KN4=
+
+Name: javadoc/org/eclipse/net4j/ui/package-summary.html
+SHA-256-Digest: Y7MoEqvNjXLNmi2JmRQoayU0vKLvvCqV1MSNBdzCMkM=
+
+Name: javadoc/org/eclipse/net4j/protocol/class-use/ProtocolVersionExcept
+ ion.html
+SHA-256-Digest: V4hvqOxUphFBslHY1hiZ8k8YTJ3N+iM7DvUFqB8cCUo=
+
+Name: javadoc/org/eclipse/net4j/signal/SignalScheduledEvent.html
+SHA-256-Digest: UZf3ufKefh43QdQUcbdGrhJKj5ELq5RlHO/PkTAn6ZA=
+
+Name: javadoc/org/eclipse/net4j/buffer/IBufferProvider.Notification.Buff
+ erProvidedEvent.html
+SHA-256-Digest: sGFVE4JY5RGTF4o4M6zT/0IAUNfnmUD1M0zbVmgEAmI=
+
+Name: javadoc/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+SHA-256-Digest: J8TX31KEJacFHi+vex9obHmJvgCum4rRLSWPpYJeJaU=
+
+Name: javadoc/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png
+SHA-256-Digest: EFPpH2uu0zkrLiY62kCjzNUUCRHfXuEm4OVsYLK5efE=
+
+Name: META-INF/eclipse.inf
+SHA-256-Digest: Rr5LcOp+oA1o+OBG8dKE1JkMSO9EcD9X+5TLiaC/4Sg=
+
+Name: images/background-2.gif
+SHA-256-Digest: yGmeX/sPBzkwV9gqpAByEKT+tUZhKRa8XXPzGu4uR0c=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/ConnectorFactory.html
+SHA-256-Digest: rXSsemQYgPYJGniWwrM/zDlILxCggNQHV3roWSZQen0=
+
+Name: javadoc/org/eclipse/net4j/signal/SignalProtocol.TimeoutChangedEven
+ t.html
+SHA-256-Digest: lmU9IV3K+cTfyc3wyfn+zWEjjD5wRWQSXKn6lksELS0=
+
+Name: javadoc/org/eclipse/net4j/ws/package-use.html
+SHA-256-Digest: DSeMDq7xY3gKEcBYd3huSPEimfvfWWWtPjabtFAB0Gc=
+
+Name: images/plugin_obj.gif
+SHA-256-Digest: 6kblN11J4QXn1CEhx6lNtscfkaFp5mpQ2ciXAw6Y7A0=
+
+Name: javadoc/org/eclipse/net4j/signal/RequestWithMonitoring.html
+SHA-256-Digest: INVGAqMIBegusyK1a3h58/yJqFVZ2SGRNAK+UWQZqug=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/InternalAcceptor.html
+SHA-256-Digest: wq3l5d24l8sst/mFB1BQGu+VrpSS+E8LVy4DpBV4CK8=
+
+Name: javadoc/org/eclipse/net4j/signal/MonitorCanceledRequest.html
+SHA-256-Digest: xTuLtLuzCy+Ui1raOWKN+TS7lJ2w4dFJE+fkn8qzjgU=
+
+Name: javadoc/org/eclipse/spi/net4j/InternalChannel.SendQueueEvent.Type.
+ html
+SHA-256-Digest: my841jFKRBGShS+E8ngfv/0I2Fs2z/ZAPnhb4of5F4Y=
+
+Name: javadoc/org/eclipse/net4j/tcp/package-use.html
+SHA-256-Digest: QksIFoSGffbjtvWlpECUHigGd8zKy/+HbAAMSTvRb/c=
+
+Name: javadoc/org/eclipse/net4j/tcp/ITCPNegotiationContext.html
+SHA-256-Digest: uRg//OJky6/vv94+Y6RXBxdpqm/e8Odit7FYJ6lH2dQ=
+
+Name: javadoc/type-search-index.zip
+SHA-256-Digest: CXi8FZE5HKHoTi5Irh6/zhB61/T16K893FSikT7/MEY=
+
+Name: javadoc/org/eclipse/net4j/acceptor/package-use.html
+SHA-256-Digest: mD/xeUyaaq0LGRZctfoRaKacwaqqbP72U1BOUSnNayE=
+
+Name: javadoc/org/eclipse/spi/net4j/InternalChannel.html
+SHA-256-Digest: mHXdBXMaB2NfUK4SfJtCSwlIMlNO7QN3QL5VpL5myXA=
+
+Name: javadoc/org/eclipse/net4j/signal/confirmation/class-use/Confirmati
+ onPrompt.html
+SHA-256-Digest: xnb1j0LooM3iZxyQKddUOxGkAnutV85BL5gqK1uNYBE=
+
+Name: javadoc/org/eclipse/net4j/signal/RequestWithConfirmation.html
+SHA-256-Digest: VZ2Lj+oZ/TELoXR/yR1FPTOujBE86VubeRySyrZU5c8=
+
+Name: javadoc/org/eclipse/net4j/class-use/TransportConfigurator.Acceptor
+ DescriptionParser.html
+SHA-256-Digest: T3IjrMKcYiTopmihCC2Str83CIU4HxuR+S4HcN3bNOo=
+
+Name: javadoc/org/eclipse/net4j/signal/confirmation/ConfirmationIndicati
+ on.html
+SHA-256-Digest: b3efyQX7wRsyp+F+8rombLeuWTaynrPRuu7Oevtrv8k=
+
+Name: javadoc/package-search-index.zip
+SHA-256-Digest: Oh2TMLNf9AkQS4o9pIvmYFCd02QWqZUlNf8Esf0j6+s=
+
+Name: html/Overview.html
+SHA-256-Digest: Gti4xuMcbHjXDArs1hiKScILDiXhgsUpqyOmFBrKmV8=
+
+Name: javadoc/jquery/jquery-ui.min.css
+SHA-256-Digest: DDQjE5sUq6e1M20fdeTzwkVsxkTXeqEeRFgJ8YS9EmA=
+
+Name: intro/css/graphics/net4j.gif
+SHA-256-Digest: /rJvun5WZWaBziso1lTm2xSix+BcPS+IOZuwZVhyQ4w=
+
+Name: javadoc/org/eclipse/net4j/signal/heartbeat/HeartBeatProtocol.Serve
+ r.html
+SHA-256-Digest: p6HfkQQ47o5Hha+efuOPR4nhXh5PgBXM993jZxEjscM=
+
+Name: javadoc/org/eclipse/net4j/signal/SignalCounter.html
+SHA-256-Digest: k52fl2oLlQCoZfC7tP0kyx/KSwdhy6y6LXKPoR8OM14=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/MonitorCanceledIndicati
+ on.html
+SHA-256-Digest: KfAfXeK5qWLeB59qG0HJNI1HsQrsWPh7LjnCkXoM1Mo=
+
+Name: images/editor-rst.png
+SHA-256-Digest: KQoq2T8nwvtxk8DQxypPajOfoK+IoeWR4xKtwAu0hs0=
+
+Name: images/plus.gif
+SHA-256-Digest: aMqc9gCyGSQduf3Fcqdvo/cpMuSW5m3CG9enX5YEAnQ=
+
+Name: javadoc/org/eclipse/spi/net4j/Connector.html
+SHA-256-Digest: 0A1KDHist5zSDosYx1tpeDA2puJumsUK+Fq6Hyz187Q=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/MonitorProgressRequest.
+ html
+SHA-256-Digest: CFxJsqJJwqZhx5RFqaSp6wJtPAgviWY/EDu9o8HR74E=
+
+Name: images/formatter-java.gif
+SHA-256-Digest: KioimDI1U/sEwXmyAdefUYJcXu/RHvTj1QEQCLTjjYw=
+
+Name: javadoc/org/eclipse/net4j/channel/class-use/ChannelOutputStream.ht
+ ml
+SHA-256-Digest: zd46wZ+GlokdtbfvGdjRPgvj7dsREz1jpV/hFxTRoxQ=
+
+Name: javadoc/help-doc.html
+SHA-256-Digest: 6BkwFBiFVtINgFHCXcdaIzI/3Rvm7ZxEsr1LlA27yJ8=
+
+Name: images/forward.png
+SHA-256-Digest: AnofoDiwybpiqWiqOezG7UiNm10k4zZOTQ14zbBMlVM=
+
+Name: javadoc/org/eclipse/net4j/channel/class-use/ChannelInputStream.htm
+ l
+SHA-256-Digest: bwtY2clGOqHvBRCjImtGmGvCH6QkGE2NeIvb32ZZB/Q=
+
+Name: javadoc/org/eclipse/net4j/ui/FactoryTypeContentProvider.html
+SHA-256-Digest: RLmVYpYLscVp/VWvxLcO9bt5fWIerqZEMBOwAk+zFbg=
+
+Name: javadoc/jquery/images/ui-bg_glass_95_fef1ec_1x400.png
+SHA-256-Digest: s8mAc9kTTpE972KROVL12kIJsGZuKxf697RYPUwFn74=
+
+Name: javadoc/org/eclipse/spi/net4j/Channel.SendQueue.html
+SHA-256-Digest: kDdqRtZWov8agtu29mCrq8bMfBKEUJ4d35vtntTsTB8=
+
+Name: javadoc/org/eclipse/net4j/tcp/class-use/TCPUtil.ConnectorData.html
+SHA-256-Digest: bCA+aHPu6/gSge7n0nOCn0E8sNSLCeZ5YMVjn7mX9aQ=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/SignalProtocol.InvalidS
+ ignalIDException.html
+SHA-256-Digest: 087VACWOr8ETlPreejSJLzAbPLh1UdWDG8OxbJjDrao=
+
+Name: javadoc/org/eclipse/net4j/acceptor/package-summary.html
+SHA-256-Digest: J6E15H2RfFwI4TQickB6fQBlzn7BwJQJqUfjYAUtBrE=
+
+Name: images/editor-1.png
+SHA-256-Digest: HKwkBvMJShE117GDda9XV2fglUEBggkGSVUkHVaQdvM=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/ISignalProtocol.WithSig
+ nalCounters.html
+SHA-256-Digest: t+C8WFpNwNr9wPbe+3qNgi6czCzeQcZZLqqqEmgzVMA=
+
+Name: images/empty.gif
+SHA-256-Digest: FcT/0p3f6VA4/9MuAZrSnCXRaClTF2lRJY6kGzQSC68=
+
+Name: javadoc/org/eclipse/net4j/tcp/ssl/SSLUtil.html
+SHA-256-Digest: LTrAMJhSogd8zjsm5pQjMOpS8+0RkrkMPUu3oKPl/wQ=
+
+Name: images/callout-2.png
+SHA-256-Digest: ZU2/i6WCXoBnzUcDs3WygObDmV9fX3iWrDrfIiRF0wQ=
+
+Name: javadoc/org/eclipse/net4j/ws/class-use/IWSAcceptor.html
+SHA-256-Digest: t3mrvcH972hM5+JypTF08uw0PyDlQSZEri/J5+eB118=
+
+Name: javadoc/org/eclipse/net4j/buffer/class-use/IBufferProvider.Introsp
+ ection.html
+SHA-256-Digest: 6sNGCrCzUu4xMkvyaQagwVr1ONlFNCQR5Nj88rec5PY=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/Protocol.InfraStructureCha
+ ngedEvent.html
+SHA-256-Digest: yZilGkS+x+tmnrvltYlRhhyyE01EU01qiY/ag+u+L98=
+
+Name: javadoc/org/eclipse/net4j/jvm/class-use/IJVMChannel.html
+SHA-256-Digest: WOHvmhciPFrYiev48zujwls7FnmMFD5aXRRsehUIULQ=
+
+Name: javadoc/org/eclipse/spi/net4j/InternalConnector.html
+SHA-256-Digest: fuMcS7pMFIMW4ThjK5BzyE4aAq21pUdZjJ/wZqidBcg=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/Protocol.html
+SHA-256-Digest: 4m5FQlbrQBmmFn12QfslAZsKsxA91IIhGpby5BIjPak=
+
+Name: javadoc/org/eclipse/net4j/signal/heartbeat/HeartBeatProtocol.Serve
+ r.Factory.html
+SHA-256-Digest: /cTsM/GaJqHzHlyWQ8n69dZlEM2YZkGhsUN0LdDzpBk=
+
+Name: javadoc/org/eclipse/net4j/buffer/IBufferPool.Introspection.html
+SHA-256-Digest: YtLgi8nNDlbhJZEIQmc5N3a0oPQylwB45mRMHXVV66A=
+
+Name: images/callout-9.png
+SHA-256-Digest: g2edO+vgiG0Ywwj0RLS8tNpFb2T1Y2Ac0hwhDUhSiPo=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/RemoteException.html
+SHA-256-Digest: ysOzWcCjWWyZOJCDWtONt9mVExAZt1nFsHUBBn48onU=
+
+Name: javadoc/org/eclipse/net4j/tcp/class-use/ITCPAcceptor.html
+SHA-256-Digest: ij+WgK1ZCT6cwXUUu12g9jTAYLHJyVziA9Fp9qN97Hs=
+
+Name: about.properties
+SHA-256-Digest: /Wy4KXrNICgbgIaGbTtmYI5Js8dR0FFV1NK23+W5zpU=
+
+Name: javadoc/org/eclipse/net4j/connector/class-use/IConnector.html
+SHA-256-Digest: DfebY6DYiVuVFAYi7gft2sFZczAdMiY0VVIx6U0O7fU=
+
+Name: javadoc/org/eclipse/net4j/signal/security/class-use/Authentication
+ Request.html
+SHA-256-Digest: DUa34+ox9nquC2mLIJeEH0eVrNUCqDZKI9xcPr77BAs=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/IndicationWithMonitorin
+ g.html
+SHA-256-Digest: 3w4D5gVODFbaBrb0DJaLtuKJGo91bEvJ5CwjskXHSZ0=
+
+Name: javadoc/org/eclipse/spi/net4j/InternalChannel.CountersChangedEvent
+ .html
+SHA-256-Digest: nyXLre84iWNvXG2hGiXZ8xhY80Y76ieQ43sBalqW7GI=
+
+Name: javadoc/org/eclipse/spi/net4j/InternalChannel.SendQueueEvent.html
+SHA-256-Digest: sxu40o9MGq6oBiVAwmW5AFI9Xk3qXkidKdSQtX6sLFs=
+
+Name: javadoc/org/eclipse/net4j/signal/ISignalProtocol.WithSignalCounter
+ s.html
+SHA-256-Digest: FySLg9WPWBl4GpUweS8Tvs+6Xf5kq5Trr0skI2Tjahk=
+
+Name: javadoc/org/eclipse/net4j/ws/jetty/package-summary.html
+SHA-256-Digest: 5GaKewSFdjTU2EjkODg3zec05dYQOaQvbSnHORcNsA8=
+
+Name: javadoc/org/eclipse/net4j/connector/ConnectorException.html
+SHA-256-Digest: Nv110kQCVRCy4ZxPbo6xK7rHo0/NOPMj835XIe1n8Tg=
+
+Name: javadoc/org/eclipse/net4j/package-use.html
+SHA-256-Digest: ymDc/y7gWuSdg4Sgst1FFf0c+ut4ih2ngTVJpW4wLro=
+
+Name: javadoc/org/eclipse/spi/net4j/InternalChannelMultiplexer.html
+SHA-256-Digest: xqTn0O1K2oaoF7CT0CTY7PsxNCWCoF7gZK3gBtAXA7s=
+
+Name: javadoc/org/eclipse/net4j/signal/Indication.html
+SHA-256-Digest: pEP50erBhzxbjYm3pP4Lt+TLCrNaxzGjtmqfqmTFWpw=
+
+Name: javadoc/jquery/images/ui-bg_flat_75_ffffff_40x100.png
+SHA-256-Digest: bKGIHpiNrV3lGBcJRlggytL8tBmbToeooAt+jPDIjFU=
+
+Name: plugin.properties
+SHA-256-Digest: YjC515Dpqqndic8634kn/sYhN6IVjKqm5LH2g016cPM=
+
+Name: javadoc/org/eclipse/net4j/class-use/ITransportConfigAware.html
+SHA-256-Digest: rP1J0ipgzDOxdHtU03tVi6B/1SvsF6IGF3/LFzTwsxg=
+
+Name: javadoc/org/eclipse/net4j/connector/class-use/ConnectorException.h
+ tml
+SHA-256-Digest: ue1W54sVvCCQJD0CQ3oKZwt9Y6+dtcdpcUC6dC2LG8c=
+
+Name: javadoc/org/eclipse/net4j/ui/class-use/FactoryTypeContentProvider.
+ html
+SHA-256-Digest: vDC1CElTD4026k5Ev8qlIux2OZm5h4CI5iviXibsyFQ=
+
+Name: javadoc/org/eclipse/net4j/connector/class-use/ConnectorState.html
+SHA-256-Digest: bJ1E75Nx7QWzjK8TKblBQnf0eq3eyt2YUVKQ9zWRpNc=
+
+Name: javadoc/org/eclipse/net4j/signal/ISignalProtocol.html
+SHA-256-Digest: hFVuQ0eL7fLqLb3M6FEKES8Xl8kGZwH4CV66BvPIk5M=
+
+Name: images/minus.gif
+SHA-256-Digest: 3U7eC1Ec14pGX1LUpNcohKyL3/UReobaQaaUQKllSn4=
+
+Name: javadoc/org/eclipse/spi/net4j/ChannelMultiplexer.html
+SHA-256-Digest: BwNfPHn19bju0xAc3ZoxfWiJNnZnhUKQH1dVjzDPrg4=
+
+Name: javadoc/jquery/jquery-ui.structure.css
+SHA-256-Digest: d0n77TR2ClctB7nwPtpN3E3qA+DVj4DpNdPOFkn4LwM=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/InternalChannel.CountersCh
+ angedEvent.html
+SHA-256-Digest: Gv0s/NMQHQjvS2mg9Jk4PLfu7svLZO/tj/aQ2B3xbkU=
+
+Name: javadoc/org/eclipse/net4j/ui/ConnectorContentProvider.html
+SHA-256-Digest: KCK9NyAc+nAfS0PUPsh9pQIXTn5Yfj2Xd3oiumRy+tM=
+
+Name: javadoc/org/eclipse/net4j/signal/Signal.html
+SHA-256-Digest: U6eR5QNAWwlb78wnRI+BQ6ueV/65HvMGlye9cMLN98k=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/SignalActor.html
+SHA-256-Digest: mPMuzbA5FyklJvfT+U07VLEY3fvfsNPUb7sC7l4BnSk=
+
+Name: javadoc/search.js
+SHA-256-Digest: gxQ8WplwU6vaZ9EzGZNjpLFWZxYT+tLqEEugcgNUtxI=
+
+Name: javadoc/jquery/jszip-utils/dist/jszip-utils.js
+SHA-256-Digest: wG92XzvtRWQ2qIGbTUH7pm5TfYjJDE9G65XWBMlAhuM=
+
+Name: javadoc/org/eclipse/spi/net4j/ChannelContainer.html
+SHA-256-Digest: Gj/N2x4TqAOV1k/0IGcPloPxiTkQkKOt/GkN0yByEtw=
+
+Name: javadoc/org/eclipse/net4j/buffer/IBufferProvider.Notification.html
+SHA-256-Digest: ZIKhYDkWeR9oKMqiup7yOR8R3tbNATDmsmY+tK2TdCs=
+
+Name: javadoc/org/eclipse/net4j/tcp/ITCPAcceptor.html
+SHA-256-Digest: ZcgXovK8uop6l2smgO5pgpAF+4sCqvGYGc/L/SkOG2I=
+
+Name: javadoc/org/eclipse/net4j/jvm/IJVMAcceptor.html
+SHA-256-Digest: KCCfwVdQPOgxHYtpmO6IMXZ7cL4+Aig1zx386QwqISE=
+
+Name: javadoc/org/eclipse/net4j/tcp/TCPUtil.html
+SHA-256-Digest: DtZbTqlOnlleEHkEL5PVV9CJQRIemyu2qlYfqdmGgGk=
+
+Name: javadoc/org/eclipse/net4j/channel/IChannelMultiplexer.html
+SHA-256-Digest: 94unGRyLY0eryIMLI1bfcGr96MbYhxQJ1RRRCYclw7o=
+
+Name: javadoc/org/eclipse/net4j/connector/class-use/IServerConnector.htm
+ l
+SHA-256-Digest: COFCOE3dzBqvjTrS9e+1F0C0PrWeGIguCmHZ586HR5U=
+
+Name: javadoc/org/eclipse/net4j/signal/heartbeat/class-use/HeartBeatProt
+ ocol.Server.Factory.html
+SHA-256-Digest: 4+tnFnG1UbxkKIAXi8MU3spkew15sqPv8ycShlq9FnM=
+
+Name: javadoc/org/eclipse/net4j/signal/wrapping/class-use/StreamWrapperI
+ njector.html
+SHA-256-Digest: Kmi4IBpBIChnWPJau74DOtNfWVGBIW143zjQZ+j7n60=
+
+Name: javadoc/org/eclipse/net4j/connector/IServerConnector.html
+SHA-256-Digest: 6iKp+1Hp2d2IllFqfCya69QURSEiYJkG9O5W8LwK/Po=
+
+Name: javadoc/org/eclipse/net4j/protocol/IProtocol2.html
+SHA-256-Digest: 2H+PXAjJ8ZTj4DLGvgqSU+OGOXsD0kK72FIdv42ghxw=
+
+Name: images/editor-rst-hover.png
+SHA-256-Digest: GLmuxrwlSDL0KE0QQDk1ollHbixHgUX6grAHyQFbyas=
+
+Name: javadoc/org/eclipse/spi/net4j/class-use/InverseCloseable.html
+SHA-256-Digest: VxkINHkoL3GCq0IX5nbHi09bPG6npPwML8DtjZ1N7hM=
+
+Name: images/editor-2.png
+SHA-256-Digest: LsAS0nk0PPKVVhkt55nHEtEe7nGN6pQsWsYkZf3vuhA=
+
+Name: about.html
+SHA-256-Digest: ZYczHLHHJbJ2GSLe/MBOpU/zRznwNG9X6G0P5BecAYs=
+
+Name: javadoc/org/eclipse/net4j/tcp/ssl/class-use/SSLUtil.html
+SHA-256-Digest: dGZ5R0sMlgQ9DaNR05VAyAE7UnHDoDWiTByoyBqpg5Q=
+
+Name: javadoc/org/eclipse/spi/net4j/Channel.html
+SHA-256-Digest: /Y9x5r8yuR7ALkFxhU4Cyvd61oGDZ0OWVkwG5/JXtAs=
+
+Name: javadoc/org/eclipse/net4j/signal/heartbeat/HeartBeatProtocol.html
+SHA-256-Digest: yv/n9cQBJ2s3HEI8nzNW0UAGKszY6IJohS8+voO0k+M=
+
+Name: META-INF/maven/org.eclipse.emf.cdo/org.eclipse.net4j.doc/pom.prope
+ rties
+SHA-256-Digest: ul93VDFnsL36ewYDRaCt8Due1Jnr4QehdExqPJX/kiA=
+
+Name: javadoc/constant-values.html
+SHA-256-Digest: zbcLEs0DXEeJDW10+fBOFc9+rhRb2I1R6MU+GJ/1R0w=
+
+Name: javadoc/org/eclipse/net4j/protocol/package-summary.html
+SHA-256-Digest: BpzKNI0v5voEzTzPU6rM+om45DjzDAg0E+RIWUhHq58=
+
+Name: javadoc/org/eclipse/net4j/tcp/package-summary.html
+SHA-256-Digest: hA8QS2ahWD1khiJiFAZhsH+016jT3QSAAPv8BQ33viY=
+
+Name: javadoc/org/eclipse/net4j/tcp/class-use/ITCPActiveSelectorListener
+ .html
+SHA-256-Digest: rkwbHPjIKTaMgJWp4AwEB+ZLp8EbQSLVUgOAurANNkI=
+
+Name: javadoc/org/eclipse/net4j/signal/class-use/Indication.html
+SHA-256-Digest: LYbEsrla7QGt/O61i0tVkbADx99qsw/LAD/yq199hKs=
+
+Name: javadoc/org/eclipse/net4j/buffer/class-use/IBufferProvider.Notific
+ ation.BufferRetainingEvent.html
+SHA-256-Digest: gLhE2YA1IQsJ3TVu9zWCA83/8x++aISQORspahuHAvU=
+
+Name: javadoc/org/eclipse/net4j/TransportConfigurator.html
+SHA-256-Digest: HSIaZegICPFvIcRdyZ0guh8AGFVyzaU+InibeQBrfT0=
+
+Name: images/callout-1.png
+SHA-256-Digest: 0OgclcWdH4ZLUWc+PbzFfWgJ/Y0HowjIGqO2EHUTgTw=
+
+Name: javadoc/org/eclipse/net4j/buffer/IBuffer.html
+SHA-256-Digest: M/QafspZRnwQF5XkEd9wGcroaZqCpGfbm+3mkjSYVQA=
+
+Name: javadoc/org/eclipse/net4j/signal/heartbeat/HeartBeatProtocol.Serve
+ r.TimerInjector.html
+SHA-256-Digest: Tp7x9PqQlQExu17c+jBWeKxou7clfTA7JdEtisoGzLs=
+

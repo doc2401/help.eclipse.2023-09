@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="copyright" content=
+  "Copyright (c) Eclipse contributors and others 2020. This page is made available under license. For full details, see the LEGAL section in the documentation that contains this page." />
+  <meta http-equiv="Content-Language" content="en-us" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="STYLESHEET" href="../book.css" charset="ISO-8859-1" type="text/css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  body {max-width: 900px;}
+  table.news col.title {width: 30%;}
+  /*img {max-width: 520px;}*/
+  table.news {table-layout: fixed; border-collapse: collapse; width: 100%;}
+  table.news td {border-top: solid thin black; padding: 10px; overflow: visible;}
+  table.news tr {vertical-align: top;}
+  table.news tr td.section {font-size: 20px; font-weight: bold;}
+  table.news tr td.title {vertical-align: top; font-weight: bold;}
+  table.news tr td.content {vertical-align: top;}
+  ul {padding-left: 13px;}
+  /*]]>*/
+  </style>
+  <title>Eclipse Platform What's New in 4.29</title>
+</head>
+<body>
+  <h2>What's New in Eclipse 4.29 (Platform)</h2>
+  <p>Here are descriptions of some of the more interesting or significant changes made to the Eclipse Platform for the
+  4.29 release of Eclipse. They are grouped into:</p>
+  <ul>
+    <!-- NOTE: Sync ../topics_WhatsNew.xml with this! -->
+    <!--li><a href="#ViewsAndDialogs">Views, Dialogs and Toolbar</a></li-->
+    <!--li><a href="#TextEditors">Text Editors</a></li-->
+    <!--li><a href="#Preferences">Preferences</a></li-->
+    <!--li><a href="#Debug">Debug</a></li-->
+    <!--li><a href="#StylingThemes">Themes and Styling</a></li-->
+    <!--li><a href="#Security">Security</a></li-->
+    <li><a href="#GeneralUpdates">General Updates</a></li>
+  </ul>
+  <p>Plug-in developers will also be interested in the corresponding <a href=
+  "../../org.eclipse.platform.doc.isv/whatsNew/platform_isv_whatsnew.html">What's new</a> document in the plug-in
+  developer's guide.</p>
+  <p>We also recommend to read the <a href="../tips/platform_tips.html">Tips and Tricks</a>.</p><br />
+<!-- ****************** START OF N&N TABLE ****************** -->
+<table class="news">
+<colgroup>
+  <col class="title" />
+  <col />
+</colgroup>
+<tbody>
+  <!-- ******************* General Updates ************************************* -->
+  <tr>
+    <td id="GeneralUpdates" class="section" colspan="2">
+    <h2>General Updates </h2>
+    </td>
+  </tr>
+
+  <tr id="open-new-workbench-window-on-current-monitor">
+    <!-- https://github.com/eclipse-platform/eclipse.platform.ui/pull/755 -->
+    <td class="title">Open New Workbench Window on Current Monitor</td>
+    <td class="content">
+      When creating a new workbench window, it was either placed on the monitor showing the currently
+      active window or on the primary monitor, depending on the operating system. Now the new window
+      is always placed on the monitor that shows the active workbench window.
+      In case the active workbench window spans multiple monitors, the monitor that displays the
+      largest part of the active window is selected.
+      <p>
+      This makes the placement of newly created workbench windows consistent across all operating
+      systems. It also better reflects the common user expectation to have a new window placed near
+      the existing one rather than on the primary monitor.
+      </p>
+    </td>
+  </tr>
+  <!-- ******************* End of General Updates ************************************* -->
+  <tr><td colspan="2"/></tr>
+</tbody>
+</table>
+<!-- ****************** END OF N&N TABLE ****************** -->
+</body>
+</html>

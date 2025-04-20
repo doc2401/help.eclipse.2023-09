@@ -1,0 +1,1167 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en">
+<head>
+
+<title>IBuffer (Net4j Signalling Platform Documentation)</title>
+<meta http-equiv="Content-Type" content="">
+
+<link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.css" title="Style">
+<script type="text/javascript" src="../../../../script.js"></script>
+<script type="text/javascript" src="../../../../jquery/jszip/dist/jszip.min.js"></script>
+<script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
+<!--[if IE]>
+<script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../../../../jquery/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-ui.js"></script>
+</head>
+<body>
+<script type="text/javascript"><!--
+    try {
+        if (location.href.indexOf('is-external=true') == -1) {
+            parent.document.title="IBuffer (Net4j Signalling Platform Documentation)";
+        }
+    }
+    catch(err) {
+    }
+//-->
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
+var pathtoroot = "../../../../";
+var useModuleDirectories = true;
+loadScripts(document, 'script');</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<header role="banner">
+<nav role="navigation">
+<div class="fixedNav">
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a id="navbar.top">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.top.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../index.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/IBuffer.html">Use</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" disabled="disabled">
+<input type="reset" id="reset" value="reset" disabled="disabled">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+</div>
+<div class="navPadding">&nbsp;</div>
+<script type="text/javascript"><!--
+$('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+//-->
+</script>
+</nav>
+</header>
+<!-- ======== START OF CLASS DATA ======== -->
+<main role="main">
+<div class="header">
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">org.eclipse.net4j.buffer</a></div>
+<h2 title="Interface IBuffer" class="title">Interface IBuffer</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Known Subinterfaces:</dt>
+<dd><code><a href="../../spi/net4j/InternalBuffer.html" title="interface in org.eclipse.spi.net4j">InternalBuffer</a></code></dd>
+</dl>
+<hr>
+<pre>public interface <span class="typeNameLabel">IBuffer</span></pre>
+<div class="block">Basic <b>unit of transport</b> in Net4j.
+ <p>
+ A buffer is well prepared for the usage with asynchronous <a href="../channel/IChannel.html" title="interface in org.eclipse.net4j.channel"><code>IChannel</code></a>s but can also be used with pure
+ <code>SocketChannel</code>s. All methods of <code>IBuffer</code> are non-blocking.
+ <p>
+ Usually buffers are obtained from a <a href="IBufferProvider.html" title="interface in org.eclipse.net4j.buffer"><code>IBufferProvider</code></a>. Buffers can be accessed, passed around and finally
+ <a href="#release()"><code>released</code></a> to their original provider. The capacity of a buffer is determined by its provider.
+ <p>
+ In addition to its payload data each buffer contains an internal header of four bytes, two of them representing a
+ channel identifier the other two of them denoting the length of the payload data. The payload data may be accessed
+ through a <a href="#getByteBuffer()"><code>ByteBuffer</code></a>.
+ <p>
+ This interface is <b>not</b> intended to be implemented by clients.
+ <p>
+ An example for <b>putting</b> values into a buffer and writing it to a <code>SocketChannel</code>:
+ <p>
+
+ <pre style="background-color:#ffffc8; border-width:1px; border-style:solid; padding:.5em;">
+ // Obtain a fresh buffer
+ Buffer buffer = bufferProvider.getBuffer(); // Start filling the buffer for channelID 4711 ByteBuffer byteBuffer =
+ buffer.startPutting(4711); byteBuffer.putDouble(15.47); // Write the contents of the Buffer to a // SocketChannel
+ without blocking while (!buffer.write(socketChannel)) { // Do something else }
+ </pre>
+
+ An example for reading a buffer from a <code>SocketChannel</code> and <b>getting</b> values from it:
+ <p>
+
+ <pre style="background-color:#ffffc8; border-width:1px; border-style:solid; padding:.5em;">
+ // Obtain a fresh buffer
+ Buffer buffer = bufferProvider.getBuffer();
+
+ // Read the contents of the Buffer from a SocketChannel without blocking
+ ByteBuffer byteBuffer;
+ while ((byteBuffer = buffer.startGetting(socketChannel)) == null)
+ {
+   // Do something else
+ }
+
+ // Access the contents of the buffer and release it to its provider
+ double value = byteBuffer.getDouble();
+ buffer.release();
+ </pre></div>
+<dl>
+<dt><span class="simpleTagLabel">Author:</span></dt>
+<dd>Eike Stepper</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="IBufferProvider.html" title="interface in org.eclipse.net4j.buffer"><code>IBufferProvider</code></a>, 
+<a href="../channel/IChannel.html#sendBuffer(org.eclipse.net4j.buffer.IBuffer)"><code>IChannel.sendBuffer(IBuffer)</code></a>, 
+<a href="../channel/IChannel.html#setReceiveHandler(org.eclipse.net4j.buffer.IBufferHandler)"><code>IChannel.setReceiveHandler(IBufferHandler)</code></a>, 
+<a href="IBufferHandler.html#handleBuffer(org.eclipse.net4j.buffer.IBuffer)"><code>IBufferHandler.handleBuffer(IBuffer)</code></a></dd>
+<dt><span class="simpleTagLabel">No Implement</span></dt>
+<dd>This interface is not intended to be implemented by clients.</dd>
+<dt><span class="simpleTagLabel">No Extend</span></dt>
+<dd>This interface is not intended to be extended by clients.</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Field</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CHANNEL_ID_BYTES">CHANNEL_ID_BYTES</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CHANNEL_ID_POS">CHANNEL_ID_POS</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static short</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#HEADER_SIZE">HEADER_SIZE</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static short</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MAX_CHANNEL">MAX_CHANNEL</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static short</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MIN_CHANNEL">MIN_CHANNEL</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static short</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#NO_CHANNEL">NO_CHANNEL</a></span></code></th>
+<td class="colLast">
+<div class="block">Possible argument value of <a href="#startPutting(short)"><code>startPutting(short)</code></a> and possible return value of <a href="#getChannelID()"><code>getChannelID()</code></a> that
+ indicates that this buffer is not intended to be passed to a <code>SocketChannel</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#PAYLOAD_SIZE_BYTES">PAYLOAD_SIZE_BYTES</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#PAYLOAD_SIZE_POS">PAYLOAD_SIZE_POS</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
+<!-- ========== METHOD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear()">clear</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Turns the state of this buffer from any state into <a href="BufferState.html#INITIAL"><code>INITIAL</code></a>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#compact()">compact</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#flip()">flip</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Turns the state of this buffer from <a href="BufferState.html#PUTTING"><code>PUTTING</code></a> into <a href="BufferState.html#GETTING"><code>GETTING</code></a>.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#formatContent(boolean)">formatContent</a></span>&#8203;(boolean&nbsp;showHeader)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>byte</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get()">get</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(byte%5B%5D)">get</a></span>&#8203;(byte[]&nbsp;dst)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="IBufferProvider.html" title="interface in org.eclipse.net4j.buffer">IBufferProvider</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBufferProvider()">getBufferProvider</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the <a href="IBufferProvider.html" title="interface in org.eclipse.net4j.buffer"><code>IBufferProvider</code></a> that has provided this buffer and that this buffer will be returned to when its
+ <a href="#release()"><code>release()</code></a> method is called.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>java.nio.ByteBuffer</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getByteBuffer()">getByteBuffer</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the <code>ByteBuffer</code> that can be used for putting or getting data.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>short</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCapacity()">getCapacity</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the capacity of this buffer.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>short</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getChannelID()">getChannelID</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the channel index value stored in the header of this buffer.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>org.eclipse.net4j.util.IErrorHandler</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getErrorHandler()">getErrorHandler</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getInt()">getInt</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLimit()">getLimit</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPosition()">getPosition</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>short</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getShort()">getShort</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code><a href="BufferState.html" title="enum in org.eclipse.net4j.buffer">BufferState</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getState()">getState</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the internal state of this buffer.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getString()">getString</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasRemaining()">hasRemaining</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isCCAM()">isCCAM</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the <em>Close Channel After Me</em> flag.</div>
+</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEOS()">isEOS</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the <em>End Of Stream</em> flag to indicate whether this buffer is the last buffer in a stream (typically a signal) of buffers.</div>
+</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#put(byte)">put</a></span>&#8203;(byte&nbsp;b)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#put(byte%5B%5D,int,int)">put</a></span>&#8203;(byte[]&nbsp;src,
+   int&nbsp;offset,
+   int&nbsp;length)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#putShort(short)">putShort</a></span>&#8203;(short&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#release()">release</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Releases this buffer to its original <a href="IBufferProvider.html" title="interface in org.eclipse.net4j.buffer"><code>IBufferProvider</code></a>.</div>
+</td>
+</tr>
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCCAM(boolean)">setCCAM</a></span>&#8203;(boolean&nbsp;ccam)</code></th>
+<td class="colLast">
+<div class="block">Sets the <em>Close Channel After Me</em> flag.</div>
+</td>
+</tr>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEOS(boolean)">setEOS</a></span>&#8203;(boolean&nbsp;eos)</code></th>
+<td class="colLast">
+<div class="block">Sets the <em>End Of Stream</em> flag to indicate whether this buffer is the last buffer in a stream (typically a signal) of buffers.</div>
+</td>
+</tr>
+<tr id="i26" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setErrorHandler(org.eclipse.net4j.util.IErrorHandler)">setErrorHandler</a></span>&#8203;(org.eclipse.net4j.util.IErrorHandler&nbsp;errorHandler)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLimit(int)">setLimit</a></span>&#8203;(int&nbsp;limit)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPosition(int)">setPosition</a></span>&#8203;(int&nbsp;position)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>java.nio.ByteBuffer</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#startGetting(java.nio.channels.SocketChannel)">startGetting</a></span>&#8203;(java.nio.channels.SocketChannel&nbsp;socketChannel)</code></th>
+<td class="colLast">
+<div class="block">Tries to read a <code>ByteBuffer</code> from a <code>SocketChannel</code> that can be used for getting data.</div>
+</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>java.nio.ByteBuffer</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#startPutting(short)">startPutting</a></span>&#8203;(short&nbsp;channelID)</code></th>
+<td class="colLast">
+<div class="block">Returns a <code>ByteBuffer</code> that can be used for putting data.</div>
+</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#write(java.nio.channels.SocketChannel)">write</a></span>&#8203;(java.nio.channels.SocketChannel&nbsp;socketChannel)</code></th>
+<td class="colLast">
+<div class="block">Tries to write the data of this buffer to a <code>SocketChannel</code>.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a id="NO_CHANNEL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>NO_CHANNEL</h4>
+<pre>static final&nbsp;short NO_CHANNEL</pre>
+<div class="block">Possible argument value of <a href="#startPutting(short)"><code>startPutting(short)</code></a> and possible return value of <a href="#getChannelID()"><code>getChannelID()</code></a> that
+ indicates that this buffer is not intended to be passed to a <code>SocketChannel</code>.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.eclipse.net4j.buffer.IBuffer.NO_CHANNEL">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="MIN_CHANNEL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MIN_CHANNEL</h4>
+<pre>static final&nbsp;short MIN_CHANNEL</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.0</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.eclipse.net4j.buffer.IBuffer.MIN_CHANNEL">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="MAX_CHANNEL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MAX_CHANNEL</h4>
+<pre>static final&nbsp;short MAX_CHANNEL</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.0</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.eclipse.net4j.buffer.IBuffer.MAX_CHANNEL">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="CHANNEL_ID_BYTES">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CHANNEL_ID_BYTES</h4>
+<pre>static final&nbsp;int CHANNEL_ID_BYTES</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.8</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.eclipse.net4j.buffer.IBuffer.CHANNEL_ID_BYTES">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="PAYLOAD_SIZE_BYTES">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PAYLOAD_SIZE_BYTES</h4>
+<pre>static final&nbsp;int PAYLOAD_SIZE_BYTES</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.8</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.eclipse.net4j.buffer.IBuffer.PAYLOAD_SIZE_BYTES">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="HEADER_SIZE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>HEADER_SIZE</h4>
+<pre>static final&nbsp;short HEADER_SIZE</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.eclipse.net4j.buffer.IBuffer.HEADER_SIZE">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="CHANNEL_ID_POS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CHANNEL_ID_POS</h4>
+<pre>static final&nbsp;int CHANNEL_ID_POS</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.10</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.eclipse.net4j.buffer.IBuffer.CHANNEL_ID_POS">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a id="PAYLOAD_SIZE_POS">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>PAYLOAD_SIZE_POS</h4>
+<pre>static final&nbsp;int PAYLOAD_SIZE_POS</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.10</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.eclipse.net4j.buffer.IBuffer.PAYLOAD_SIZE_POS">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<!-- ============ METHOD DETAIL ========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a id="getBufferProvider()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBufferProvider</h4>
+<pre class="methodSignature"><a href="IBufferProvider.html" title="interface in org.eclipse.net4j.buffer">IBufferProvider</a>&nbsp;getBufferProvider()</pre>
+<div class="block">Returns the <a href="IBufferProvider.html" title="interface in org.eclipse.net4j.buffer"><code>IBufferProvider</code></a> that has provided this buffer and that this buffer will be returned to when its
+ <a href="#release()"><code>release()</code></a> method is called.</div>
+</li>
+</ul>
+<a id="getChannelID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChannelID</h4>
+<pre class="methodSignature">short&nbsp;getChannelID()</pre>
+<div class="block">Returns the channel index value stored in the header of this buffer.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.0</dd>
+</dl>
+</li>
+</ul>
+<a id="getCapacity()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCapacity</h4>
+<pre class="methodSignature">short&nbsp;getCapacity()</pre>
+<div class="block">Returns the capacity of this buffer.
+ <p>
+ The capacity of this buffer is equal to the <a href="IBufferProvider.html#getBufferCapacity()"><code>capacity</code></a> of the
+ <a href="IBufferProvider.html" title="interface in org.eclipse.net4j.buffer"><code>IBufferProvider</code></a> that has provided this buffer.</div>
+</li>
+</ul>
+<a id="getState()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getState</h4>
+<pre class="methodSignature"><a href="BufferState.html" title="enum in org.eclipse.net4j.buffer">BufferState</a>&nbsp;getState()</pre>
+<div class="block">Returns the internal state of this buffer.</div>
+</li>
+</ul>
+<a id="startGetting(java.nio.channels.SocketChannel)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>startGetting</h4>
+<pre class="methodSignature">java.nio.ByteBuffer&nbsp;startGetting&#8203;(java.nio.channels.SocketChannel&nbsp;socketChannel)
+                          throws java.lang.IllegalStateException,
+                                 java.io.IOException</pre>
+<div class="block">Tries to read a <code>ByteBuffer</code> from a <code>SocketChannel</code> that can be used for getting data.
+ <p>
+ This method is non-blocking and it can be necessary to repeatedly call it. If it was not possible to read a
+ complete header from the <code>SocketChannel</code> <code>null</code> is returned and the state of this buffer is
+ <a href="BufferState.html#READING_HEADER"><code>READING_HEADER</code></a>. If it was not possible to read a complete body from the
+ <code>SocketChannel</code> <code>null</code> is returned and the state of this buffer is
+ <a href="BufferState.html#READING_BODY"><code>READING_BODY</code></a>.
+ <p>
+ If a <code>ByteBuffer</code> is returned it <b>may only</b> be used for getting data. It is left to the
+ responsibility of the caller that only the following methods of that <code>ByteBuffer</code> are used:
+ <ul>
+ <li> <code>ByteBuffer.get()</code>
+ <li> <code>ByteBuffer.get(byte[])</code>
+ <li> <code>ByteBuffer.get(int)</code>
+ <li> <code>ByteBuffer.get(byte[], int, int)</code>
+ <li> <code>ByteBuffer.getChar()</code>
+ <li> <code>ByteBuffer.getChar(int)</code>
+ <li> <code>ByteBuffer.getDouble()</code>
+ <li> <code>ByteBuffer.getDouble(int)</code>
+ <li> <code>ByteBuffer.getFloat()</code>
+ <li> <code>ByteBuffer.getFloat(int)</code>
+ <li> <code>ByteBuffer.getInt()</code>
+ <li> <code>ByteBuffer.getInt(int)</code>
+ <li> <code>ByteBuffer.getLong()</code>
+ <li> <code>ByteBuffer.getLong(int)</code>
+ <li> <code>ByteBuffer.getShort()</code>
+ <li> <code>ByteBuffer.getShort(int)</code>
+ <li>all other methods that do not influence <code>Buffer.position()</code>, <code>Buffer.limit()</code> and
+ <code>Buffer.capacity()</code>
+ </ul></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>socketChannel</code> - The <code>socketChannel</code> to read the <code>ByteBuffer</code> from.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A <code>ByteBuffer</code> that can be used for getting data if it was possible to completely read the data from
+         the given <code>SocketChannel</code>, <code>null</code> otherwise.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - If the state of this buffer is not <a href="BufferState.html#INITIAL"><code>INITIAL</code></a>,
+           <a href="BufferState.html#READING_HEADER"><code>READING_HEADER</code></a> or <a href="BufferState.html#READING_BODY"><code>READING_BODY</code></a>.</dd>
+<dd><code>java.io.IOException</code> - If the <code>SocketChannel</code> has been closed or discovers other I/O problems.</dd>
+</dl>
+</li>
+</ul>
+<a id="startPutting(short)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>startPutting</h4>
+<pre class="methodSignature">java.nio.ByteBuffer&nbsp;startPutting&#8203;(short&nbsp;channelID)
+                          throws java.lang.IllegalStateException</pre>
+<div class="block">Returns a <code>ByteBuffer</code> that can be used for putting data.
+ <p>
+ Turns the <a href="#getState()"><code>state</code></a> of this buffer into <a href="BufferState.html#PUTTING"><code>PUTTING</code></a>.
+ <p>
+ The returned <code>ByteBuffer</code> <b>may only</b> be used for putting data. It is left to the responsibility of
+ the caller that only the following methods of that <code>ByteBuffer</code> are used:
+ <ul>
+ <li> <code>ByteBuffer.put(byte)</code>
+ <li> <code>ByteBuffer.put(byte[])</code>
+ <li> <code>ByteBuffer.put(ByteBuffer)</code>
+ <li> <code>ByteBuffer.put(int, byte)</code>
+ <li> <code>ByteBuffer.put(byte[], int, int)</code>
+ <li> <code>ByteBuffer.putChar(char)</code>
+ <li> <code>ByteBuffer.putChar(int, char)</code>
+ <li> <code>ByteBuffer.putDouble(double)</code>
+ <li> <code>ByteBuffer.putDouble(int, double)</code>
+ <li> <code>ByteBuffer.putFloat(float)</code>
+ <li> <code>ByteBuffer.putFloat(int, float)</code>
+ <li> <code>ByteBuffer.putInt(int)</code>
+ <li> <code>ByteBuffer.putInt(int, int)</code>
+ <li> <code>ByteBuffer.putLong(long)</code>
+ <li> <code>ByteBuffer.putLong(int, long)</code>
+ <li> <code>ByteBuffer.putShort(short)</code>
+ <li> <code>ByteBuffer.putShort(int, short)</code>
+ <li>all other methods that do not influence <code>Buffer.position()</code>, <code>Buffer.limit()</code> and
+ <code>Buffer.capacity()</code>
+ </ul></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>channelID</code> - The index of an <a href="../channel/IChannel.html" title="interface in org.eclipse.net4j.channel"><code>IChannel</code></a> that this buffer is intended to be passed to later or <a href="#NO_CHANNEL"><code>NO_CHANNEL</code></a>
+          .</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A <code>ByteBuffer</code> that can be used for putting data.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - If the state of this buffer is not <a href="BufferState.html#INITIAL"><code>INITIAL</code></a> (<a href="BufferState.html#PUTTING"><code>PUTTING</code></a> is allowed but meaningless if and only if the given <code>channelID</code> is equal to the
+           existing <code>channelID</code> of this buffer).</dd>
+</dl>
+</li>
+</ul>
+<a id="write(java.nio.channels.SocketChannel)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>write</h4>
+<pre class="methodSignature">boolean&nbsp;write&#8203;(java.nio.channels.SocketChannel&nbsp;socketChannel)
+       throws java.lang.IllegalStateException,
+              java.io.IOException</pre>
+<div class="block">Tries to write the data of this buffer to a <code>SocketChannel</code>.
+ <p>
+ This method is non-blocking and it can be necessary to repeatedly call it. If it was not possible to completely
+ write the data to the <code>SocketChannel</code> <code>false</code> is returned and the state of this buffer
+ remains <a href="BufferState.html#WRITING"><code>WRITING</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>socketChannel</code> - The <code>socketChannel</code> to write the data to.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if it was possible to completely write the data to the <code>SocketChannel</code>,
+         <code>false</code> otherwise.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - If the state of this buffer is not <a href="BufferState.html#PUTTING"><code>PUTTING</code></a> or <a href="BufferState.html#WRITING"><code>WRITING</code></a>.</dd>
+<dd><code>java.io.IOException</code> - If the <code>SocketChannel</code> has been closed or discovers other I/O problems.</dd>
+</dl>
+</li>
+</ul>
+<a id="flip()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>flip</h4>
+<pre class="methodSignature">void&nbsp;flip()
+   throws java.lang.IllegalStateException</pre>
+<div class="block">Turns the state of this buffer from <a href="BufferState.html#PUTTING"><code>PUTTING</code></a> into <a href="BufferState.html#GETTING"><code>GETTING</code></a>.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - If the state of this buffer is not <a href="BufferState.html#PUTTING"><code>PUTTING</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="getByteBuffer()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getByteBuffer</h4>
+<pre class="methodSignature">java.nio.ByteBuffer&nbsp;getByteBuffer()
+                           throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the <code>ByteBuffer</code> that can be used for putting or getting data.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - If the state of this buffer is not <a href="BufferState.html#PUTTING"><code>PUTTING</code></a> or <a href="BufferState.html#GETTING"><code>GETTING</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a id="isEOS()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isEOS</h4>
+<pre class="methodSignature">boolean&nbsp;isEOS()</pre>
+<div class="block">Returns the <em>End Of Stream</em> flag to indicate whether this buffer is the last buffer in a stream (typically a signal) of buffers.</div>
+</li>
+</ul>
+<a id="setEOS(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEOS</h4>
+<pre class="methodSignature">void&nbsp;setEOS&#8203;(boolean&nbsp;eos)</pre>
+<div class="block">Sets the <em>End Of Stream</em> flag to indicate whether this buffer is the last buffer in a stream (typically a signal) of buffers.</div>
+</li>
+</ul>
+<a id="isCCAM()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isCCAM</h4>
+<pre class="methodSignature">boolean&nbsp;isCCAM()</pre>
+<div class="block">Returns the <em>Close Channel After Me</em> flag.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.4</dd>
+</dl>
+</li>
+</ul>
+<a id="setCCAM(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCCAM</h4>
+<pre class="methodSignature">void&nbsp;setCCAM&#8203;(boolean&nbsp;ccam)</pre>
+<div class="block">Sets the <em>Close Channel After Me</em> flag.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.4</dd>
+</dl>
+</li>
+</ul>
+<a id="release()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>release</h4>
+<pre class="methodSignature">void&nbsp;release()</pre>
+<div class="block">Releases this buffer to its original <a href="IBufferProvider.html" title="interface in org.eclipse.net4j.buffer"><code>IBufferProvider</code></a>.</div>
+</li>
+</ul>
+<a id="clear()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clear</h4>
+<pre class="methodSignature">void&nbsp;clear()</pre>
+<div class="block">Turns the state of this buffer from any state into <a href="BufferState.html#INITIAL"><code>INITIAL</code></a>.</div>
+</li>
+</ul>
+<a id="formatContent(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>formatContent</h4>
+<pre class="methodSignature">java.lang.String&nbsp;formatContent&#8203;(boolean&nbsp;showHeader)</pre>
+</li>
+</ul>
+<a id="getErrorHandler()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getErrorHandler</h4>
+<pre class="methodSignature">org.eclipse.net4j.util.IErrorHandler&nbsp;getErrorHandler()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.0</dd>
+</dl>
+</li>
+</ul>
+<a id="setErrorHandler(org.eclipse.net4j.util.IErrorHandler)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setErrorHandler</h4>
+<pre class="methodSignature">void&nbsp;setErrorHandler&#8203;(org.eclipse.net4j.util.IErrorHandler&nbsp;errorHandler)</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.0</dd>
+</dl>
+</li>
+</ul>
+<a id="compact()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>compact</h4>
+<pre class="methodSignature">void&nbsp;compact()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.7</dd>
+</dl>
+</li>
+</ul>
+<a id="getPosition()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPosition</h4>
+<pre class="methodSignature">int&nbsp;getPosition()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.7</dd>
+</dl>
+</li>
+</ul>
+<a id="setPosition(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPosition</h4>
+<pre class="methodSignature">void&nbsp;setPosition&#8203;(int&nbsp;position)</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.7</dd>
+</dl>
+</li>
+</ul>
+<a id="getLimit()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLimit</h4>
+<pre class="methodSignature">int&nbsp;getLimit()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.7</dd>
+</dl>
+</li>
+</ul>
+<a id="setLimit(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLimit</h4>
+<pre class="methodSignature">void&nbsp;setLimit&#8203;(int&nbsp;limit)</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.7</dd>
+</dl>
+</li>
+</ul>
+<a id="hasRemaining()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hasRemaining</h4>
+<pre class="methodSignature">boolean&nbsp;hasRemaining()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.7</dd>
+</dl>
+</li>
+</ul>
+<a id="get()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre class="methodSignature">byte&nbsp;get()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.7</dd>
+</dl>
+</li>
+</ul>
+<a id="get(byte[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre class="methodSignature">void&nbsp;get&#8203;(byte[]&nbsp;dst)</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.7</dd>
+</dl>
+</li>
+</ul>
+<a id="getShort()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getShort</h4>
+<pre class="methodSignature">short&nbsp;getShort()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.7</dd>
+</dl>
+</li>
+</ul>
+<a id="getInt()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInt</h4>
+<pre class="methodSignature">int&nbsp;getInt()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.7</dd>
+</dl>
+</li>
+</ul>
+<a id="getString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getString</h4>
+<pre class="methodSignature">java.lang.String&nbsp;getString()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.7</dd>
+</dl>
+</li>
+</ul>
+<a id="put(byte)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>put</h4>
+<pre class="methodSignature">void&nbsp;put&#8203;(byte&nbsp;b)</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.7</dd>
+</dl>
+</li>
+</ul>
+<a id="put(byte[],int,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>put</h4>
+<pre class="methodSignature">void&nbsp;put&#8203;(byte[]&nbsp;src,
+         int&nbsp;offset,
+         int&nbsp;length)</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.7</dd>
+</dl>
+</li>
+</ul>
+<a id="putShort(short)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>putShort</h4>
+<pre class="methodSignature">void&nbsp;putShort&#8203;(short&nbsp;value)</pre>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.7</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+</div>
+</main>
+<!-- ========= END OF CLASS DATA ========= -->
+<footer role="contentinfo">
+<nav role="navigation">
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a id="navbar.bottom">
+<!--   -->
+</a>
+<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
+<a id="navbar.bottom.firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../index.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/IBuffer.html">Use</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
+</ul>
+</div>
+<a id="skip.navbar.bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</nav>
+<p class="legalCopy"><small><i class="copyright">Copyright (c) 2004-2021 Eike Stepper (Loehne, Germany) and others.<br>All rights reserved. This program and the accompanying materials are made available under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html</i></small></p>
+</footer>
+</body>
+</html>

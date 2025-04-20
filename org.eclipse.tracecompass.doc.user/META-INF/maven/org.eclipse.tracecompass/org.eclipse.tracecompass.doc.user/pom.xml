@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.eclipse.tracecompass</groupId>
+    <artifactId>org.eclipse.tracecompass.doc</artifactId>
+    <version>9.1.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>org.eclipse.tracecompass.doc.user</artifactId>
+  <packaging>eclipse-plugin</packaging>
+  <name>Trace Compass User Guide</name>
+  <dependencies>
+    <dependency>
+      <groupId>p2.eclipse.plugin</groupId>
+      <artifactId>org.eclipse.osgi</artifactId>
+      <version>3.18.400.v20230509-2241</version>
+      <type>eclipse-plugin</type>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>p2.eclipse.plugin</groupId>
+      <artifactId>org.eclipse.core.contenttype</artifactId>
+      <version>3.9.0.v20230412-0829</version>
+      <type>eclipse-plugin</type>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>p2.eclipse.plugin</groupId>
+      <artifactId>org.eclipse.equinox.preferences</artifactId>
+      <version>3.10.200.v20230120-0604</version>
+      <type>eclipse-plugin</type>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>p2.eclipse.plugin</groupId>
+      <artifactId>org.eclipse.equinox.registry</artifactId>
+      <version>3.11.200.v20220817-1601</version>
+      <type>eclipse-plugin</type>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>p2.eclipse.plugin</groupId>
+      <artifactId>org.eclipse.equinox.common</artifactId>
+      <version>3.18.0.v20230523-2142</version>
+      <type>eclipse-plugin</type>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>p2.eclipse.plugin</groupId>
+      <artifactId>org.eclipse.core.expressions</artifactId>
+      <version>3.9.0.v20230317-0901</version>
+      <type>eclipse-plugin</type>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>p2.eclipse.plugin</groupId>
+      <artifactId>org.eclipse.core.runtime</artifactId>
+      <version>3.27.0.v20230515-1719</version>
+      <type>eclipse-plugin</type>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>p2.eclipse.plugin</groupId>
+      <artifactId>org.eclipse.core.jobs</artifactId>
+      <version>3.14.0.v20230317-0901</version>
+      <type>eclipse-plugin</type>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>p2.eclipse.plugin</groupId>
+      <artifactId>org.eclipse.equinox.app</artifactId>
+      <version>1.6.200.v20220720-2012</version>
+      <type>eclipse-plugin</type>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.service.prefs</artifactId>
+      <version>1.1.2</version>
+      <scope>compile</scope>
+      <optional>false</optional>
+    </dependency>
+    <dependency>
+      <groupId>p2.eclipse.plugin</groupId>
+      <artifactId>org.eclipse.help</artifactId>
+      <version>3.10.0.v20230317-0802</version>
+      <type>eclipse-plugin</type>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>generate-documentation</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <echo>Generating Help Files</echo>
+              <target>
+                <property name="compile_classpath" refid="maven.compile.classpath" />
+                <ant inheritRefs="true" antfile="build.xml" target="build" />
+              </target>
+            </configuration>
+          </execution>
+          <execution>
+            <id>clean-documentation</id>
+            <phase>clean</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <echo>Cleaning up generated Help Files</echo>
+              <target>
+                <ant antfile="build.xml" target="clean" />
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho.extras</groupId>
+        <artifactId>tycho-eclipserun-plugin</artifactId>
+        <configuration>
+          <appArgLine>-application org.eclipse.ant.core.antRunner -buildfile build.xml build.index</appArgLine>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>clean-index</id>
+            <phase>clean</phase>
+            <goals>
+              <goal>clean</goal>
+            </goals>
+            <configuration>
+              <filesets>
+                <fileset>
+                  <directory>index/</directory>
+                </fileset>
+              </filesets>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <profiles>
+    <profile>
+      <id>deploy-doc</id>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>deploy</id>
+                <phase>install</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+                <configuration>
+                  <target>
+                    <mkdir dir="${docDestination}/org.eclipse.tracecompass.doc.user/" />
+                    <delete includeemptydirs="false">
+                      <fileset dir="${docDestination}/org.eclipse.tracecompass.doc.user">
+                        <include name="**" />
+                      </fileset>
+                    </delete>
+                    <mkdir dir="${docDestination}/org.eclipse.tracecompass.doc.user/reference" />
+                    <copy includeemptydirs="false" todir="${docDestination}/org.eclipse.tracecompass.doc.user">
+                      <fileset includes="*.html,images/**" dir="doc" />
+                    </copy>
+                    <copy includeemptydirs="false" todir="${docDestination}/org.eclipse.tracecompass.doc.user/reference">
+                      <fileset dir="reference" />
+                    </copy>
+                  </target>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>

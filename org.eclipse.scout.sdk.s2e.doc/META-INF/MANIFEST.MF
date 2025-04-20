@@ -1,0 +1,234 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.eclipse.scout.sdk.s2e:org.eclipse.scout.sdk.s
+ 2e.doc
+Bnd-LastModified: 1693917307217
+Build-Jdk-Spec: 17
+Bundle-ActivationPolicy: lazy
+Bundle-Description: Eclipse Scout SDK
+Bundle-DocURL: https://eclipse.org/scout
+Bundle-License: https://www.eclipse.org/legal/epl-2.0/
+Bundle-ManifestVersion: 2
+Bundle-Name: Scout SDK Documentation
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-SymbolicName: org.eclipse.scout.sdk.s2e.doc;singleton:=true
+Bundle-Vendor: Eclipse Scout Project
+Bundle-Version: 13.0.22
+Created-By: Apache Maven Bundle Plugin 5.1.8
+Export-Package: org.eclipse.scout.sdk.s2e.doc;version="13.0.0"
+Implementation-Title: org.eclipse.scout.sdk.s2e:org.eclipse.scout.sdk.s2
+ e.doc
+Implementation-Vendor: Eclipse Scout Project
+Implementation-Version: 13.0.22
+Import-Package: java.lang
+Require-Bundle: org.eclipse.help;bundle-version="[3.9.100,4)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=17))"
+Specification-Title: org.eclipse.scout.sdk.s2e:org.eclipse.scout.sdk.s2e
+ .doc
+Specification-Vendor: Eclipse Scout Project
+Specification-Version: 13.0
+Tool: Bnd-6.3.1.202206071316
+
+Name: html/images/sdk_new_form.png
+SHA-256-Digest: h3BFdCSzv3LE+umtqWF+MIFfKofb/zwGPzebY4WOC0A=
+
+Name: plugin.xml
+SHA-256-Digest: PzAF1fT0rCPgURjhJ/KiUO7f+KafsHXq+7jXZhc7noE=
+
+Name: html/css/eclipse.css
+SHA-256-Digest: hXXYBCIT9yaXkB/cZ6qpVcIJmwJP5+xGS/TXT/BJibw=
+
+Name: html/sdk_wizard_permission.html
+SHA-256-Digest: zTh/wjAIh/NL/fKoLL+3hgXFGzFkeVbfA10usuFYXds=
+
+Name: html/images/icon_text.png
+SHA-256-Digest: 7YfRAJ6SL/KGKyiwFKleNOqbEVrBFzL74A1yCmeRNks=
+
+Name: html/images/icon_fileadd_pending.png
+SHA-256-Digest: /ozFkHuk1QXPCoRaNTrXXeQnPO/rrN5Uofr3Pm7AVCc=
+
+Name: html/images/prev.gif
+SHA-256-Digest: I4Bs/TypPpF2FValAaI3lNDWuD4KFikkGjdaeiyR4Yc=
+
+Name: contexts_scout.xml
+SHA-256-Digest: IXpJRFb0OFj865C1KuLqk0CVYtAVryHZJfN4pyx+g48=
+
+Name: html/images/sdk_new_project_initial_helloworld.png
+SHA-256-Digest: gT4ERb7KrZjn41Zo6F4Qh7z960EbB/Z1uUp8MYAbgR0=
+
+Name: html/images/sdk_new_project_connectors.png
+SHA-256-Digest: pkgArWImE6MZLiYMdT+LQX01NouYtzfzoKMQ21IVLf8=
+
+Name: html/sdk_wizard_project.html
+SHA-256-Digest: 9hudbkpifJHCOvwmS7JejOHJ95KfsPW78IYWtdflY9Y=
+
+Name: html/sdk_editor_java.html
+SHA-256-Digest: q5jSFf0KvR8Q840h8pUAvXBqbzIjH2sPVhNZdkqvCxA=
+
+Name: html/sdk_wizard_page.html
+SHA-256-Digest: 2f3tYc1PoKXuZa5HICf3qOoNrwB575igR4fOqnZbzAE=
+
+Name: html/images/oomph_existing_projects1.png
+SHA-256-Digest: GcMcTNuKXJAvtDRFpYb2bi7Yasd7tU+PCY7OEd/wvdo=
+
+Name: html/images/workingsets_top_level.png
+SHA-256-Digest: gcvLJJ60OTiLslQt9Hos2wJyQyjtz2e+5gjeoO/NgVU=
+
+Name: html/scout_user_guide.html
+SHA-256-Digest: 2Q2QO93H6Xv+11gZlLyHNfhw3t3Jg/RjkaPtvBo6fbs=
+
+Name: html/images/sdk_wizard_nls_entry.png
+SHA-256-Digest: 2zAm1hniAusu4e1Fw9CUMOX01Z6MupxudkbnMXJf+9U=
+
+Name: html/images/contacts_persons_alice.png
+SHA-256-Digest: iMJGhueg1jiXj+A8eXvpA00rHL94au9UT7F+oZ5OkVo=
+
+Name: html/images/icon_export.png
+SHA-256-Digest: YQcbBL6mBZ4CyLsXCPMMhn/iLON4uQNQhuJcfShslGo=
+
+Name: html/images/icon_import.png
+SHA-256-Digest: sj4OejD7UjDCzC1TP+Ztiq5Es2akWyLG3IyCwqAmSME=
+
+Name: html/images/java_proposals_table2.png
+SHA-256-Digest: 6dEoMhackrTzbd28g2M/Bkxizpf2jumWJIladKHCOnk=
+
+Name: html/images/sdk_new_wizard.png
+SHA-256-Digest: dZ4xCGJ9ChBiJkk0Pa0tRQqeIhO0G80eBb63Tk9lXzE=
+
+Name: html/images/next.gif
+SHA-256-Digest: IFqoxpwo9EXNAc2xh0M2KmlZWC1RBMxv8nWCwhMwRtI=
+
+Name: html/images/oomph_status.png
+SHA-256-Digest: SJdjFq/Dka81QxXNJ6K2QUjNOs6EeqE2xmg8Rxdg/VE=
+
+Name: html/images/sdk_new_page.png
+SHA-256-Digest: /ezw+lRNcyOXKn/wUfPVXfYgQeJAVSm+wE/1bz3VKK8=
+
+Name: html/images/sdk_start_new_workspace.png
+SHA-256-Digest: ajQ+hT0U0p1qQT9tbceZQ0rQJ1n4ynBhs977oFiXxEc=
+
+Name: toc.xml
+SHA-256-Digest: gr136QJ6EdgnCIwpZzZO1bK+TokvKJiEBhcPJN6OCPY=
+
+Name: html/sdk_wizard_form.html
+SHA-256-Digest: whlEyWDQ9M3xNmEwurKTmaJGYfbEzEz8nhXA/pLy17M=
+
+Name: html/images/sdk_start_all.png
+SHA-256-Digest: K5tIK3j8eItiAmQVuqLI3xSu03bQ/xJ7EWVqw7YX9Ik=
+
+Name: org.eclipse.scout.sdk.s2e:org.eclipse.scout.sdk.s2e.doc
+Build-Time: 20230905-123119
+Project-ArtifactId: org.eclipse.scout.sdk.s2e.doc
+Project-GroupId: org.eclipse.scout.sdk.s2e
+Project-Name: org.eclipse.scout.sdk.s2e:org.eclipse.scout.sdk.s2e.doc
+Project-Version: 13.0.22
+
+Name: html/sdk_wizard.html
+SHA-256-Digest: 8JRzwd7IWggHCFUASsJV9O02RtELY5lYS9j3TYzJrS8=
+
+Name: html/images/home.gif
+SHA-256-Digest: 4cB3uzSzawBtPtcQboiWU16+RMytdhxFuZZGzwENCF8=
+
+Name: html/images/sdk_editor_nls.png
+SHA-256-Digest: EWOxT/+BGywB0oFCTVCeq4/MN+Ra0szmpkm77ZAcdiA=
+
+Name: html/sdk.html
+SHA-256-Digest: UVE3yHOMao0uRQ5H/4VfYIyhOJWvKofhUygezF+jsXc=
+
+Name: html/images/oomph_workingsets.png
+SHA-256-Digest: tF+QLBesjOTovTY51NvhYAFFEUUQnYOZdXOvk0/1kio=
+
+Name: META-INF/maven/org.eclipse.scout.sdk.s2e/org.eclipse.scout.sdk.s2e
+ .doc/pom.xml
+SHA-256-Digest: s2SqdvOyICnRuu40oOVK6Rz6Amz29YfjPCwgiBnCvCc=
+
+Name: html/css/coderay-eclipse.css
+SHA-256-Digest: js1Ls1bfVoiq42pffEvhOwm+11Hw6rAHK/WtkVEQPl8=
+
+Name: html/images/icon_find_obj.png
+SHA-256-Digest: jSKrXpqvW1mxwXXai6/xxmQJuH8kKN4OrpQQl5q96p0=
+
+Name: html/sdk_editor_nls.html
+SHA-256-Digest: vnvwZyWwGbnOBd1VJ0P5hFUGyg0apzwOt//OR8Ftbbg=
+
+Name: html/sdk_wizard_language.html
+SHA-256-Digest: gqeBqsVm1bSSWneHkk5Cfppt2ucDzsBmAQx/2dpEzfo=
+
+Name: html/images/java_proposals_code.png
+SHA-256-Digest: ltbfc0QcVwNWdMZMEhPMgSbVhy2TPhdY1/0HKzPBCeI=
+
+Name: html/images/oomph_existing_project.png
+SHA-256-Digest: NcPBQ3pcBl0SA/PcqAyMBOwVysvbM3wDZzW4iRYgX9Y=
+
+Name: html/images/icon_refresh.png
+SHA-256-Digest: L3fhyReI8nbUlSocwxFI+uqkNm7PSkhXQ9/Vveow0eM=
+
+Name: html/sdk_wizard_code-type.html
+SHA-256-Digest: ZO/NBrunO1ckecE8QF+fBd9Ktj0tH5IvXcYbBg9poV0=
+
+Name: html/images/sdk_new_codetype.png
+SHA-256-Digest: cfphuZ6A8dF+a31pBnpcTlOZy+eKVXW+XcR7+KzLN5Q=
+
+Name: html/images/run_helloworld_in_browser.png
+SHA-256-Digest: LxtYFIbFwlNJwaE0ARz9Vo+HCOSpEHYqAF9J2/iwBj4=
+
+Name: html/images/java_proposals_groupbox2.png
+SHA-256-Digest: hnbslxTZDMgXiAeIHP1HpextCGR2CHJGBCFzycne2KY=
+
+Name: about.html
+SHA-256-Digest: O4tx6OOPpBpch9lrGPVDYJoTP4z0yg5sxmTWx0Fm6Go=
+
+Name: html/images/oomph_contacts_console.png
+SHA-256-Digest: RNEGXb08/xZNYJVtSZqGXFXhNYliSUifSsYvVtrbLDM=
+
+Name: html/images/run_contacts_all_dev.png
+SHA-256-Digest: bFRNI3Djg7t7I9hHQSpYlfQ2diemmFlJb0XA96tbbOw=
+
+Name: html/images/sdk_new_lookupcall.png
+SHA-256-Digest: Y30ErDWEu09LJz3/99vGDXE79nOO/XolC/CrRXCZE4g=
+
+Name: org/eclipse/scout/sdk/s2e/doc/IContextsScoutXmlIds.class
+SHA-256-Digest: 9setdNRvFaRZ2FNtvHwaKB74tPoodmAorEZSaX3lrPs=
+
+Name: html/images/oomph_restart.png
+SHA-256-Digest: X70utrLvYoAdR/XAG2j2hew4KQh2YCxshkAOelPFtsU=
+
+Name: META-INF/maven/org.eclipse.scout.sdk.s2e/org.eclipse.scout.sdk.s2e
+ .doc/pom.properties
+SHA-256-Digest: n6SWTZB1vIWD0CHKOe4qvbSTE0e/jqia23iF0034TTI=
+
+Name: html/images/java_proposals_texts.png
+SHA-256-Digest: YB0YZdVWH5L/f3nZ1sTY+ckgY/hC9fYREDHVK1svsN4=
+
+Name: html/tutorial.html
+SHA-256-Digest: 8gloFvu9Q8XZD11QFjMum1fOoB+EOoDZej3qr4Dqwyk=
+
+Name: html/images/icon_text_add.png
+SHA-256-Digest: B+9RrQ8XyGXyL4YfMViOTGP2XnNsuXv3rb750S+Bx6o=
+
+Name: html/sdk_wizard_lookupcall.html
+SHA-256-Digest: ItCALpVTCr4eemKLzUundtkzTY2n7UfbDAN6LUG2MSk=
+
+Name: html/images/sdk_wizard_language.png
+SHA-256-Digest: S+++9c/+MBIF7QzazCf+QmuIwkPBGUFJF5i60tr75BE=
+
+Name: html/tutorial_existingdemo.html
+SHA-256-Digest: DiKhp+uSkTTKntt4vhmv+hwg6K6mZtDWGSDXJ8JfRqs=
+
+Name: html/images/oomph_existing_variables.png
+SHA-256-Digest: X2oCdOL5QisvvABCfYfGXdVNcSlsq0wKaN3SP/7vszo=
+
+Name: html/tutorial_helloworld.html
+SHA-256-Digest: yjxZOL7ig3l5Za2m7RgN9Ij0cu1mAdk9YLWssgmlv8k=
+
+Name: html/images/sdk_new_project.png
+SHA-256-Digest: b2EqB3y29zE8joAXdLMJRtvdpsRugwhLUsQcGURmdfI=
+
+Name: html/images/sdk_new_permission.png
+SHA-256-Digest: Bplu8DHCBTRr2qSzO1aHxrCf6zOtbUafOhdpEFD8PtQ=
+
+Name: html/sdk_wizard_nls-entry.html
+SHA-256-Digest: sHA00vHp7bMz5jzU83AizNZ8uopDL4RoOYBFr1Nn9H4=
+
+Name: html/images/icon_text_remove.png
+SHA-256-Digest: 5fGkzz5ssgj/ffrfIZR6KHKfF7szjU9P1cDnDGkS5+A=
+
